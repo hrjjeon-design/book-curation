@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js
+.next/
+out/
+
+# Environment variables
+.env*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Idea/Editor
+.vscode/
+.idea/
+
+# Zip files
+*.zip
+
+# Nested Git
+.git/
+!/.git/
