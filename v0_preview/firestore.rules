@@ -1,0 +1,36 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // 운영 컬렉션: 누구나 읽기 가능, 쓰기 불가
+    match /themes/{themeId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    match /books/{bookId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    match /curator_config/{personaId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // interaction_logs: 서버에서만 쓰기 (클라이언트 접근 불가)
+    match /interaction_logs/{eventId} {
+      allow read, write: if false;
+    }
+
+    // users: 본인만 읽기/쓰기
+    match /users/{uid} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+
+      // recommendation_history: 본인만 읽기/쓰기
+      match /recommendation_history/{historyId} {
+        allow read, write: if request.auth != null && request.auth.uid == uid;
+      }
+    }
+  }
+}

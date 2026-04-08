@@ -4,7 +4,9 @@ import { useEffect, useState } from "react"
 import { SearchInput } from "@/components/search-input"
 import { TopicGroup } from "@/components/topic-group"
 import { RecommendationResult } from "@/components/recommendation-result"
+import { ThemeCandidatePanel } from "@/components/theme-candidate-panel"
 import { Skeleton } from "@/components/ui/skeleton"
+import { auth } from "@/lib/firebase/client"
 
 interface Theme {
   themeId: string
@@ -22,6 +24,14 @@ export default function Home() {
   const [loading, setLoading] = useState(true)
   const [recommendation, setRecommendation] = useState<Recommendation | null>(null)
   const [recommending, setRecommending] = useState(false)
+  
+  // States for Stage 5
+  const [freeQueryResult, setFreeQueryResult] = useState<{
+    inputQuery: string
+    resolvedThemes: { themeId: string; name: string; reason: string }[]
+  } | null>(null)
+  const [querying, setQuerying] = useState(false)
+  const [sessionId] = useState(() => `sess_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`)
 
   useEffect(() => {
     fetch("/api/themes")
@@ -36,18 +46,115 @@ export default function Home() {
       })
   }, [])
 
-  const handleSearch = (query: string) => {
-    console.log("Search:", query)
-    // TODO: Implement search recommendation
+  const getDeviceType = (): string => {
+    if (typeof window === "undefined") return "desktop"
+    const w = window.innerWidth
+    if (w < 768) return "mobile"
+    if (w < 1024) return "tablet"
+    return "desktop"
+  }
+
+  const handleSearch = async (query: string) => {
+    if (!query.trim()) return
+    setQuerying(true)
+    try {
+      // 1. interaction_logs: free_query_submitted (fire-and-forget)
+      fetch("/api/logs", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          sessionId,
+          userId: auth.currentUser?.uid ?? null,
+          eventType: "free_query_submitted",
+          entryType: "free_input",
+          themeId: null,
+          resolvedThemeIds: [],
+          inputQuery: query,
+          recommendedBookIds: [],
+          deviceType: getDeviceType(),
+        }),
+      }).catch(err => console.error("Log failed", err))
+
+      // 2. /api/route-query 호출
+      const res = await fetch("/api/route-query", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query }),
+      })
+      const data = await res.json()
+      setFreeQueryResult(data)
+      setRecommendation(null) // Clear any existing recommendation
+      window.scrollTo(0, 0)
+    } catch (err) {
+      console.error("Failed to route query", err)
+    } finally {
+      setQuerying(false)
+    }
   }
 
   const handleTopicClick = async (themeId: string) => {
     setRecommending(true)
+    
+    const entryType = freeQueryResult ? "free_input" : "theme_selection"
+    
+    // interaction_logs: theme_selected (fire-and-forget)
+    fetch("/api/logs", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        sessionId,
+        userId: auth.currentUser?.uid ?? null,
+        eventType: "theme_selected",
+        entryType,
+        themeId: themeId,
+        resolvedThemeIds: [themeId],
+        inputQuery: freeQueryResult?.inputQuery ?? null,
+        recommendedBookIds: [],
+        deviceType: getDeviceType(),
+      }),
+    }).catch(err => console.error("Log failed", err))
+
     try {
       const res = await fetch(`/api/recommend?themeId=${themeId}`)
       const data = await res.json()
       setRecommendation(data)
       window.scrollTo(0, 0)
+
+      // interaction_logs: recommendation_rendered (fire-and-forget)
+      fetch("/api/logs", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          sessionId,
+          userId: auth.currentUser?.uid ?? null,
+          eventType: "recommendation_rendered",
+          entryType,
+          themeId: themeId,
+          resolvedThemeIds: [themeId],
+          inputQuery: freeQueryResult?.inputQuery ?? null,
+          recommendedBookIds: data.books?.map((b: any) => b.bookId).filter(Boolean) ?? [],
+          deviceType: getDeviceType(),
+        }),
+      }).catch(err => console.error("Log failed", err))
+
+      // Save history if logged in
+      const user = auth.currentUser
+      if (user && data.books?.length > 0) {
+        fetch("/api/history", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            uid: user.uid,
+            entryType,
+            inputQuery: freeQueryResult?.inputQuery ?? null,
+            selectedThemeId: themeId,
+            selectedThemeLabel: themes.find((t) => t.themeId === themeId)?.name ?? "",
+            resolvedThemeIds: [themeId],
+            resolvedThemeLabels: [themes.find((t) => t.themeId === themeId)?.name ?? ""],
+            recommendedBooks: data.books,
+          }),
+        })
+      }
     } catch (err) {
       console.error("Failed to fetch recommendation", err)
     } finally {
@@ -65,11 +172,11 @@ export default function Home() {
     )
   }
 
-  const groupedThemes = themes.reduce((acc: Record<string, Theme[]>, theme) => {
+  const groupedThemes = Array.isArray(themes) ? themes.reduce((acc: Record<string, Theme[]>, theme) => {
     if (!acc[theme.group]) acc[theme.group] = []
     acc[theme.group].push(theme)
     return acc
-  }, {})
+  }, {}) : {}
 
   return (
     <main className="min-h-screen bg-background">
@@ -87,7 +194,7 @@ export default function Home() {
           <SearchInput onSearch={handleSearch} />
         </div>
 
-        {loading || recommending ? (
+        {loading || recommending || querying ? (
           <div className="space-y-8">
             <Skeleton className="h-4 w-[100px]" />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -96,6 +203,13 @@ export default function Home() {
               ))}
             </div>
           </div>
+        ) : freeQueryResult ? (
+          <ThemeCandidatePanel
+            inputQuery={freeQueryResult.inputQuery}
+            resolvedThemes={freeQueryResult.resolvedThemes}
+            onSelect={handleTopicClick}
+            onBack={() => setFreeQueryResult(null)}
+          />
         ) : (
           <div className="space-y-10 sm:space-y-12">
             {Object.entries(groupedThemes).map(([groupTitle, groupTopics]) => (

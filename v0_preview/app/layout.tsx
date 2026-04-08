@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { AuthButton } from "@/components/auth-button"
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -37,6 +38,12 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className="font-sans antialiased">
+        <div className="border-b border-border">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
+            <span className="text-sm font-medium text-foreground">철학 도서 큐레이션</span>
+            <AuthButton />
+          </div>
+        </div>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
