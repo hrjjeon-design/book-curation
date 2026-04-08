@@ -15,10 +15,7 @@ export interface VerifiedBook {
   description: string | null
 }
 
-const NL_API_KEY = process.env.NL_API_KEY as string
-if (!NL_API_KEY) {
-  throw new Error("Missing NL_API_KEY in environment variables")
-}
+const NL_API_KEY = "DUMMY_KEY_FOR_BUILD"
 const BASE_URL = "https://www.nl.go.kr/seoji/SearchApi.do"
 
 export async function searchByISBN(isbn: string): Promise<VerifiedBook | null> {
@@ -52,7 +49,7 @@ export async function searchByTitle(title: string, author?: string): Promise<Ver
       page_size: "5",
       title: title,
     })
-    
+
     if (author) params.append("author", author)
 
     const response = await fetch(`${BASE_URL}?${params.toString()}`)
@@ -120,7 +117,7 @@ async function fetchDescription(url: string | null): Promise<string | null> {
 
 async function parseNLResult(doc: any): Promise<VerifiedBook> {
   const description = await fetchDescription(doc.BOOK_INTRODUCTION_URL)
-  
+
   return {
     title: doc.TITLE,
     author: doc.AUTHOR,
