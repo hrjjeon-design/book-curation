@@ -160,10 +160,13 @@ interface VerifiedBook {
 주제: {theme.name} ({theme.description})
 관련 개념: {theme.relatedConcepts.join(", ")}
 
-지침:
-1. 한국에서 출판된 철학 도서만 추천하세요 (번역서 포함)
-2. 실제 존재하는 책만 추천하세요. 제목이나 저자를 지어내지 마세요.
-3. ISBN을 아는 경우 포함하세요.
+후보 구성 기준:
+1. 한국에서 출판된 철학 도서만 (번역서 포함)
+2. 실제 존재하는 책만. 제목이나 저자를 지어내지 마세요.
+3. 난이도를 섞어주세요: 입문서 3~4권, 중급서 3~4권, 심화서 2~3권
+4. 고전과 현대 저작을 균형 있게 포함하세요
+5. 같은 저자의 책은 최대 1권까지만
+6. ISBN을 아는 경우 포함하세요
 
 응답은 반드시 JSON 배열로만 보내주세요:
 [
@@ -182,32 +185,45 @@ const verifiedBooks = await verifyBooks(candidates)
 
 ### 7.3 3단계: Gemini 최종 추천 (스트리밍)
 
-기존 프롬프트와 동일한 구조. 단, 후보 도서 목록이 Firestore가 아닌 2단계 결과.
+후보 도서 목록은 Firestore가 아닌 2단계 결과를 사용한다. curator_config의 **모든 필드**를 프롬프트에 반영한다.
 
 **프롬프트:**
 
 ```
-당신은 다음과 같은 페르소나를 가진 도서 큐레이터입니다:
+당신은 다음과 같은 도서 큐레이터입니다:
+
+[페르소나]
 이름: {curator.name}
 설명: {curator.summary}
-말투: {curator.voiceStyle.join(", ")}
+말투:
+- {curator.voiceStyle.join("\n- ")}
 
-사용자가 다음 주제에 대해 책 추천을 원합니다:
-주제: {theme.name} ({theme.description})
+[추론 규칙]
+{curator.reasoningRules.join("\n")}
 
-추천할 후보 도서 목록:
+[금지 규칙]
+{curator.forbiddenRules.join("\n")}
+
+서점에 손님이 찾아왔습니다.
+손님의 관심 주제: {theme.name} ({theme.description})
+
+당신의 서가에서 다음 책들이 이 주제와 관련이 있습니다:
 {verifiedBooks를 JSON으로}
 
 지침:
-1. 후보 도서들 중에서 주제에 가장 적합한 책을 선정하세요. (최대 3권)
-2. 후보 목록에 없는 책은 절대 추천하지 마세요.
-3. 각 책에 대해 다음 정보를 작성하세요:
-   - oneLineSummary: 책에 대한 한 줄 요약
+1. 이 목록에서 손님에게 가장 도움이 될 책 3권을 골라주세요.
+2. 이 목록에 없는 책은 절대 추천하지 마세요.
+3. 가능하면 난이도가 다른 책들을 섞어 골라, 손님이 단계적으로 읽을 수 있게 하세요.
+4. introMessage는 손님에게 직접 말을 거는 것처럼 쓰세요.
+   - 주제에 대한 짧은 공감이나 맥락을 먼저 건네고
+   - 왜 이 세 권을 골랐는지 한두 문장으로 설명하세요
+5. 각 책에 대해 다음 정보를 작성하세요:
+   - title: 책 제목 (후보 목록과 동일하게)
+   - oneLineSummary: 이 책이 뭔지 한 문장으로 (서점 주인이 책을 건네며 하는 말처럼)
    - entryDifficulty: 입문, 중간, 어려움 중 하나
-   - philosophicalContext: 이 책이 다루는 철학적 맥락
-   - whyThisBook: 이 주제에 이 책이 추천되는 이유
+   - philosophicalContext: 이 책이 다루는 철학적 맥락 (학술적이지 않게, 손님이 이해할 수 있게)
+   - whyThisBook: 이 손님의 주제에 이 책이 맞는 이유 (일반론 금지, 구체적으로)
    - reasonTags: 짧은 태그 목록 (예: #실존주의, #불안)
-4. 전체 추천에 대한 짧은 도입 메시지(introMessage)를 포함하세요.
 
 응답은 반드시 JSON 형식으로만 보내주세요:
 {
