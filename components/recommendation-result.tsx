@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, Loader2 } from "lucide-react"
 import { BookCard } from "@/components/book-card"
 
 interface Book {
@@ -20,10 +20,11 @@ interface Book {
 interface RecommendationResultProps {
   introMessage: string
   books: Book[]
+  streaming?: boolean
   onBack: () => void
 }
 
-export function RecommendationResult({ introMessage, books, onBack }: RecommendationResultProps) {
+export function RecommendationResult({ introMessage, books, streaming, onBack }: RecommendationResultProps) {
   return (
     <div className="max-w-2xl mx-auto px-5 py-8">
       <button
@@ -34,11 +35,16 @@ export function RecommendationResult({ introMessage, books, onBack }: Recommenda
         주제 선택으로 돌아가기
       </button>
 
-      {introMessage && (
+      {introMessage ? (
         <div className="border-l-2 border-primary pl-4 mb-8">
           <p className="text-muted-foreground text-sm leading-relaxed">{introMessage}</p>
         </div>
-      )}
+      ) : streaming ? (
+        <div className="flex items-center gap-2 text-muted-foreground text-sm mb-8">
+          <Loader2 className="w-4 h-4 animate-spin" />
+          추천 도서를 선정하고 있습니다...
+        </div>
+      ) : null}
 
       <div className="divide-y divide-border">
         {Array.isArray(books) && books.map((book, i) => (
@@ -57,6 +63,13 @@ export function RecommendationResult({ introMessage, books, onBack }: Recommenda
           />
         ))}
       </div>
+
+      {streaming && books.length > 0 && (
+        <div className="flex items-center gap-2 text-muted-foreground text-sm py-6">
+          <Loader2 className="w-4 h-4 animate-spin" />
+          더 찾고 있습니다...
+        </div>
+      )}
     </div>
   )
 }

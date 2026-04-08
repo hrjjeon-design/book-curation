@@ -94,9 +94,11 @@ export default function Home() {
 
   const handleTopicClick = async (themeId: string) => {
     setRecommending(true)
-    
+    setRecommendation({ introMessage: "", books: [] })
+    window.scrollTo(0, 0)
+
     const entryType = freeQueryResult ? "free_input" : "theme_selection"
-    
+
     // interaction_logs: theme_selected (fire-and-forget)
     fetch("/api/logs", {
       method: "POST",
@@ -116,10 +118,76 @@ export default function Home() {
 
     try {
       const res = await fetch(`/api/recommend?themeId=${themeId}`)
-      const data = await res.json()
-      if (data.error) throw new Error(data.details || data.error)
-      setRecommendation(data)
-      window.scrollTo(0, 0)
+      if (!res.ok || !res.body) throw new Error("Stream failed")
+
+      const reader = res.body.getReader()
+      const decoder = new TextDecoder()
+      let accumulated = ""
+      let bookMeta: any[] = []
+      let metaParsed = false
+
+      while (true) {
+        const { done, value } = await reader.read()
+        if (done) break
+        accumulated += decoder.decode(value, { stream: true })
+
+        // Extract metadata from first line
+        if (!metaParsed && accumulated.includes("\n")) {
+          const newlineIdx = accumulated.indexOf("\n")
+          const metaLine = accumulated.slice(0, newlineIdx)
+          try {
+            const parsed = JSON.parse(metaLine)
+            if (parsed.__meta__) {
+              bookMeta = parsed.__meta__
+              accumulated = accumulated.slice(newlineIdx + 1)
+              metaParsed = true
+            }
+          } catch {}
+        }
+
+        if (!metaParsed) continue
+
+        // Try to parse the Gemini JSON progressively
+        const cleanedJson = accumulated.replace(/```json|```/g, "").trim()
+        try {
+          const parsed = JSON.parse(cleanedJson)
+          const enrichedBooks = (Array.isArray(parsed.books) ? parsed.books : []).map((rec: any) => {
+            const original = bookMeta.find((b: any) => b.title === rec.title)
+            return {
+              ...rec,
+              bookId: original?.bookId || null,
+              author: original?.author || rec.author || "Unknown",
+              publisher: original?.publisher || null,
+              pubYear: original?.pubYear || null,
+              coverImage: original?.coverImage || null,
+            }
+          })
+          setRecommendation({ introMessage: parsed.introMessage || "", books: enrichedBooks })
+        } catch {
+          // JSON not yet complete — try to extract partial data
+          const introMatch = cleanedJson.match(/"introMessage"\s*:\s*"((?:[^"\\]|\\.)*)"/);
+          if (introMatch) {
+            setRecommendation(prev => prev ? { ...prev, introMessage: introMatch[1] } : { introMessage: introMatch[1], books: [] })
+          }
+        }
+      }
+
+      // Final parse
+      const cleanedJson = accumulated.replace(/```json|```/g, "").trim()
+      const parsed = JSON.parse(cleanedJson)
+      const finalBooks = (Array.isArray(parsed.books) ? parsed.books : []).map((rec: any) => {
+        const original = bookMeta.find((b: any) => b.title === rec.title)
+        return {
+          ...rec,
+          bookId: original?.bookId || null,
+          author: original?.author || rec.author || "Unknown",
+          publisher: original?.publisher || null,
+          pubYear: original?.pubYear || null,
+          coverImage: original?.coverImage || null,
+        }
+      })
+      const finalData = { introMessage: parsed.introMessage || "", books: finalBooks }
+      setRecommendation(finalData)
 
       // interaction_logs: recommendation_rendered (fire-and-forget)
       fetch("/api/logs", {
@@ -133,14 +201,14 @@ export default function Home() {
           themeId: themeId,
           resolvedThemeIds: [themeId],
           inputQuery: freeQueryResult?.inputQuery ?? null,
-          recommendedBookIds: data.books?.map((b: any) => b.bookId).filter(Boolean) ?? [],
+          recommendedBookIds: finalData.books?.map((b: any) => b.bookId).filter(Boolean) ?? [],
           deviceType: getDeviceType(),
         }),
       }).catch(err => console.error("Log failed", err))
 
       // Save history if logged in
       const user = auth.currentUser
-      if (user && data.books?.length > 0) {
+      if (user && finalData.books?.length > 0) {
         fetch("/api/history", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -152,7 +220,7 @@ export default function Home() {
             selectedThemeLabel: themes.find((t) => t.themeId === themeId)?.name ?? "",
             resolvedThemeIds: [themeId],
             resolvedThemeLabels: [themes.find((t) => t.themeId === themeId)?.name ?? ""],
-            recommendedBooks: data.books,
+            recommendedBooks: finalData.books,
           }),
         })
       }
@@ -168,7 +236,8 @@ export default function Home() {
       <RecommendationResult
         introMessage={recommendation.introMessage}
         books={recommendation.books}
-        onBack={() => setRecommendation(null)}
+        streaming={recommending}
+        onBack={() => { setRecommendation(null); setRecommending(false) }}
       />
     )
   }

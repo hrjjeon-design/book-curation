@@ -31,7 +31,7 @@ export async function GET(request: Request) {
     }))
 
     // 2. Filter books by themeHints
-    const filteredBooks = allBooks.filter((book: any) => 
+    const filteredBooks = allBooks.filter((book: any) =>
       book.themeHints?.includes(themeId)
     )
 
@@ -79,37 +79,47 @@ ${JSON.stringify(filteredBooks.map((b: any) => ({
 }
 `
 
-    const result = await geminiModel.generateContent(prompt)
-    const responseText = result.response.text()
-    
-    // Clean up potential MD formatting in JSON response
-    const cleanedJson = responseText.replace(/```json|```/g, "").trim()
-    const recommendation = JSON.parse(cleanedJson)
-    const rawBooks = Array.isArray(recommendation.books) ? recommendation.books : []
+    // 4. Book metadata for client-side enrichment
+    const bookMeta = allBooks.map((b: any) => ({
+      bookId: b.bookId,
+      title: b.title,
+      author: b.author,
+      publisher: b.publisher || null,
+      pubYear: b.pubYear || null,
+      coverImage: b.coverImage || null,
+    }))
 
-    // Map recommendation back to full book data if needed
-    const finalBooks = rawBooks.map((rec: any) => {
-      const originalBook = allBooks.find((b: any) => b.title === rec.title)
-      return {
-        ...rec,
-        bookId: originalBook?.bookId || null,
-        author: originalBook?.author || rec.author || "Unknown",
-        publisher: originalBook?.publisher || null,
-        pubYear: originalBook?.pubYear || null,
-        coverImage: originalBook?.coverImage || null
-      }
+    // 5. Stream Gemini response
+    const result = await geminiModel.generateContentStream(prompt)
+    const encoder = new TextEncoder()
+
+    const stream = new ReadableStream({
+      async start(controller) {
+        // Send book metadata as first line
+        controller.enqueue(encoder.encode(JSON.stringify({ __meta__: bookMeta }) + "\n"))
+
+        for await (const chunk of result.stream) {
+          const text = chunk.text()
+          if (text) {
+            controller.enqueue(encoder.encode(text))
+          }
+        }
+        controller.close()
+      },
     })
 
-    return Response.json({
-      introMessage: recommendation.introMessage,
-      books: finalBooks
+    return new Response(stream, {
+      headers: {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Transfer-Encoding": "chunked",
+      },
     })
 
   } catch (error: any) {
     console.error("Recommendation error:", error)
-    return Response.json({ 
-      error: "Failed to generate recommendation", 
-      details: error.message || String(error) 
+    return Response.json({
+      error: "Failed to generate recommendation",
+      details: error.message || String(error)
     }, { status: 500 })
   }
 }
