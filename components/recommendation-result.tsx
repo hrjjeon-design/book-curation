@@ -42,7 +42,7 @@ export function RecommendationResult({ introMessage, books, streaming, onBack }:
       ) : streaming ? (
         <div className="flex items-center gap-2 text-muted-foreground text-sm mb-8">
           <Loader2 className="w-4 h-4 animate-spin" />
-          추천 도서를 선정하고 있습니다...
+          도서를 찾고 있습니다...
         </div>
       ) : null}
 
@@ -67,7 +67,7 @@ export function RecommendationResult({ introMessage, books, streaming, onBack }:
       {streaming && books.length > 0 && (
         <div className="flex items-center gap-2 text-muted-foreground text-sm py-6">
           <Loader2 className="w-4 h-4 animate-spin" />
-          더 찾고 있습니다...
+          추천을 작성하고 있습니다...
         </div>
       )}
     </div>
