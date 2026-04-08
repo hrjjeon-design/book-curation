@@ -105,8 +105,11 @@ ${JSON.stringify(filteredBooks.map((b: any) => ({
       books: finalBooks
     })
 
-  } catch (error) {
+  } catch (error: any) {
     console.error("Recommendation error:", error)
-    return Response.json({ error: "Failed to generate recommendation" }, { status: 500 })
+    return Response.json({ 
+      error: "Failed to generate recommendation", 
+      details: error.message || String(error) 
+    }, { status: 500 })
   }
 }

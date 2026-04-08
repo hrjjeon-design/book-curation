@@ -117,7 +117,7 @@ export default function Home() {
     try {
       const res = await fetch(`/api/recommend?themeId=${themeId}`)
       const data = await res.json()
-      if (data.error) throw new Error(data.error)
+      if (data.error) throw new Error(data.details || data.error)
       setRecommendation(data)
       window.scrollTo(0, 0)
 
