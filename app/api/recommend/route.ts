@@ -85,9 +85,10 @@ ${JSON.stringify(filteredBooks.map((b: any) => ({
     // Clean up potential MD formatting in JSON response
     const cleanedJson = responseText.replace(/```json|```/g, "").trim()
     const recommendation = JSON.parse(cleanedJson)
+    const rawBooks = Array.isArray(recommendation.books) ? recommendation.books : []
 
     // Map recommendation back to full book data if needed
-    const finalBooks = recommendation.books.map((rec: any) => {
+    const finalBooks = rawBooks.map((rec: any) => {
       const originalBook = allBooks.find((b: any) => b.title === rec.title)
       return {
         ...rec,
