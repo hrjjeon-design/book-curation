@@ -41,7 +41,7 @@ export function RecommendationResult({ introMessage, books, onBack }: Recommenda
       )}
 
       <div className="divide-y divide-border">
-        {books.map((book, i) => (
+        {Array.isArray(books) && books.map((book, i) => (
           <BookCard
             key={book.bookId ?? i}
             title={book.title}
