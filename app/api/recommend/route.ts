@@ -21,6 +21,7 @@ export async function GET(request: Request) {
     ])
 
     if (!themeDoc.exists || !curatorDoc.exists) {
+      console.error(`[404] Theme(${themeId}) exists: ${themeDoc.exists}, Curator exists: ${curatorDoc.exists}`)
       return Response.json({ error: "Theme or Curator Config not found" }, { status: 404 })
     }
 
@@ -75,6 +76,7 @@ export async function GET(request: Request) {
     const verifiedBooks = await verifyBooks(candidates)
 
     if (verifiedBooks.length === 0) {
+      console.warn(`[404] No verified books found for theme: ${themeId}. Candidates was:`, candidates.length)
       return Response.json({ error: "No verified books found for this theme" }, { status: 404 })
     }
 

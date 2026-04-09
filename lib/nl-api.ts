@@ -95,7 +95,7 @@ export async function verifyBooks(candidates: GeminiCandidate[]): Promise<Verifi
     candidates.map(async (candidate) => {
       // Individual timeout for each candidate
       const timeoutPromise = new Promise<null>((_, reject) =>
-        setTimeout(() => reject(new Error("Timeout")), 5000)
+        setTimeout(() => reject(new Error("Timeout")), 10000)
       )
 
       try {
