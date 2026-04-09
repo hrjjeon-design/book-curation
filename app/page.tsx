@@ -24,7 +24,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true)
   const [recommendation, setRecommendation] = useState<Recommendation | null>(null)
   const [recommending, setRecommending] = useState(false)
-  
+
   // States for Stage 5
   const [freeQueryResult, setFreeQueryResult] = useState<{
     inputQuery: string
@@ -142,15 +142,23 @@ export default function Home() {
               accumulated = accumulated.slice(newlineIdx + 1)
               metaParsed = true
             }
-          } catch {}
+          } catch { }
         }
 
         if (!metaParsed) continue
 
-        // Try to parse the Gemini JSON progressively
+        // Try to parse the Gemini JSON progressively (Robust extraction)
         const cleanedJson = accumulated.replace(/```json|```/g, "").trim()
         try {
-          const parsed = JSON.parse(cleanedJson)
+          let jsonToParse = cleanedJson
+          const startIdx = cleanedJson.indexOf("{")
+          const endIdx = cleanedJson.lastIndexOf("}")
+          
+          if (startIdx !== -1 && endIdx !== -1) {
+            jsonToParse = cleanedJson.substring(startIdx, endIdx + 1)
+          }
+          
+          const parsed = JSON.parse(jsonToParse)
           const enrichedBooks = (Array.isArray(parsed.books) ? parsed.books : []).map((rec: any) => {
             const original = bookMeta.find((b: any) => b.title === rec.title)
             return {
@@ -174,7 +182,13 @@ export default function Home() {
 
       // Final parse
       const cleanedJson = accumulated.replace(/```json|```/g, "").trim()
-      const parsed = JSON.parse(cleanedJson)
+      let jsonToParse = cleanedJson
+      const startIdx = cleanedJson.indexOf("{")
+      const endIdx = cleanedJson.lastIndexOf("}")
+      if (startIdx !== -1 && endIdx !== -1) {
+        jsonToParse = cleanedJson.substring(startIdx, endIdx + 1)
+      }
+      const parsed = JSON.parse(jsonToParse)
       const finalBooks = (Array.isArray(parsed.books) ? parsed.books : []).map((rec: any) => {
         const original = bookMeta.find((b: any) => b.title === rec.title)
         return {

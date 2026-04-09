@@ -54,17 +54,13 @@ export async function GET(request: Request) {
     const step1Text = step1Result.response.text()
     let candidates: GeminiCandidate[] = []
     try {
-      // Clean potential markdown code blocks
+      // Try to parse the Gemini JSON (Robust extraction)
       const cleanedJson = step1Text.replace(/```json|```/g, "").trim()
-      // Extract first JSON array (handle Gemini duplicating output)
       let jsonToParse = cleanedJson
-      let depth = 0, endIdx = -1
-      for (let i = 0; i < cleanedJson.length; i++) {
-        if (cleanedJson[i] === "[") depth++
-        else if (cleanedJson[i] === "]") { depth--; if (depth === 0) { endIdx = i; break } }
-      }
-      if (endIdx > 0 && endIdx < cleanedJson.length - 1) {
-        jsonToParse = cleanedJson.substring(0, endIdx + 1)
+      const startIdx = cleanedJson.indexOf("[")
+      const endIdx = cleanedJson.lastIndexOf("]")
+      if (startIdx !== -1 && endIdx !== -1) {
+        jsonToParse = cleanedJson.substring(startIdx, endIdx + 1)
       }
       candidates = JSON.parse(jsonToParse)
     } catch (e) {
@@ -117,7 +113,10 @@ ${JSON.stringify(verifiedBooks, null, 2)}
    - whyThisBook: 이 손님의 주제에 이 책이 맞는 이유 (일반론 금지, 구체적으로)
    - reasonTags: 짧은 태그 목록 (예: #실존주의, #불안)
 
-응답은 반드시 JSON 형식으로만 보내주세요:
+응답은 반드시 아래 지정된 JSON 형식으로만 보내주세요.
+인사말, 설명, 마크다운 코드 블록(\` \` \`json) 등을 절대 포함하지 마세요.
+반드시 '{'로 시작해서 '}'로 끝나는 순수 JSON 데이터만 출력하세요.
+
 {
   "introMessage": "...",
   "books": [
