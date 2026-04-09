@@ -226,6 +226,7 @@ export default function Home() {
       }
     } catch (err) {
       console.error("Failed to fetch recommendation", err)
+      setRecommendation(null)
     } finally {
       setRecommending(false)
     }

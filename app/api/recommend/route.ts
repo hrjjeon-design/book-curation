@@ -55,7 +55,17 @@ export async function GET(request: Request) {
     try {
       // Clean potential markdown code blocks
       const cleanedJson = step1Text.replace(/```json|```/g, "").trim()
-      candidates = JSON.parse(cleanedJson)
+      // Extract first JSON array (handle Gemini duplicating output)
+      let jsonToParse = cleanedJson
+      let depth = 0, endIdx = -1
+      for (let i = 0; i < cleanedJson.length; i++) {
+        if (cleanedJson[i] === "[") depth++
+        else if (cleanedJson[i] === "]") { depth--; if (depth === 0) { endIdx = i; break } }
+      }
+      if (endIdx > 0 && endIdx < cleanedJson.length - 1) {
+        jsonToParse = cleanedJson.substring(0, endIdx + 1)
+      }
+      candidates = JSON.parse(jsonToParse)
     } catch (e) {
       console.error("Step 1 JSON Parse Error:", e, step1Text)
       throw new Error("Failed to parse candidate list")
