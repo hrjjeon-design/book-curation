@@ -149,7 +149,16 @@ async function fetchDescription(url: string | null): Promise<string | null> {
 }
 
 async function parseNLResult(doc: any): Promise<VerifiedBook> {
-  const description = await fetchDescription(doc.BOOK_INTRODUCTION_URL)
+  let descriptionUrl = doc.BOOK_INTRODUCTION_URL
+  if (descriptionUrl && descriptionUrl.startsWith("http://")) {
+    descriptionUrl = descriptionUrl.replace("http://", "https://")
+  }
+  const description = await fetchDescription(descriptionUrl)
+
+  let coverImage = doc.TITLE_URL || null
+  if (coverImage && coverImage.startsWith("http://")) {
+    coverImage = coverImage.replace("http://", "https://")
+  }
 
   return {
     title: doc.TITLE,
@@ -157,7 +166,7 @@ async function parseNLResult(doc: any): Promise<VerifiedBook> {
     publisher: doc.PUBLISHER,
     pubYear: parseInt(doc.PUBLISH_PREDATE?.substring(0, 4) || "0"),
     isbn: doc.EA_ISBN || doc.SET_ISBN || "",
-    coverImage: doc.TITLE_URL || null,
+    coverImage: coverImage,
     description: description,
   }
 }

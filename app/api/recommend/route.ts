@@ -50,20 +50,22 @@ export async function GET(request: Request) {
   ...
 ]
 `
-    const step1Result = await geminiModel.generateContent(step1Prompt)
-    const step1Text = step1Result.response.text()
-    let candidates: GeminiCandidate[] = []
-    try {
-      // Try to parse the Gemini JSON (Robust extraction)
-      const cleanedJson = step1Text.replace(/```json|```/g, "").trim()
-      let jsonToParse = cleanedJson
-      const startIdx = cleanedJson.indexOf("[")
-      const endIdx = cleanedJson.lastIndexOf("]")
-      if (startIdx !== -1 && endIdx !== -1) {
-        jsonToParse = cleanedJson.substring(startIdx, endIdx + 1)
-      }
-      candidates = JSON.parse(jsonToParse)
-    } catch (e) {
+      const step1Result = await geminiModel.generateContent({
+        contents: [{ role: "user", parts: [{ text: step1Prompt }] }],
+        generationConfig: { responseMimeType: "application/json" }
+      })
+      const step1Text = step1Result.response.text()
+      let candidates: GeminiCandidate[] = []
+      try {
+        // Try to parse the Gemini JSON (Robust extraction)
+        let jsonToParse = step1Text.trim()
+        const startIdx = jsonToParse.indexOf("[")
+        const endIdx = jsonToParse.lastIndexOf("]")
+        if (startIdx !== -1 && endIdx !== -1) {
+          jsonToParse = jsonToParse.substring(startIdx, endIdx + 1)
+        }
+        candidates = JSON.parse(jsonToParse)
+      } catch (e) {
       console.error("Step 1 JSON Parse Error:", e, step1Text)
       throw new Error("Failed to parse candidate list")
     }
@@ -132,7 +134,10 @@ ${JSON.stringify(verifiedBooks, null, 2)}
 }
 `
 
-    const result = await geminiModel.generateContentStream(step3Prompt)
+    const result = await geminiModel.generateContentStream({
+      contents: [{ role: "user", parts: [{ text: step3Prompt }] }],
+      generationConfig: { responseMimeType: "application/json" }
+    })
     const encoder = new TextEncoder()
 
     const stream = new ReadableStream({

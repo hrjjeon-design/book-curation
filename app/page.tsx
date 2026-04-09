@@ -126,6 +126,17 @@ export default function Home() {
       let bookMeta: any[] = []
       let metaParsed = false
 
+      // Helper for robust parsing
+      const robustParse = (json: string) => {
+        try {
+          // Remove trailing commas in arrays and objects
+          const cleaned = json.replace(/,(\s*[\]}])/g, "$1")
+          return JSON.parse(cleaned)
+        } catch (e) {
+          throw e
+        }
+      }
+
       while (true) {
         const { done, value } = await reader.read()
         if (done) break
@@ -136,7 +147,7 @@ export default function Home() {
           const newlineIdx = accumulated.indexOf("\n")
           const metaLine = accumulated.slice(0, newlineIdx)
           try {
-            const parsed = JSON.parse(metaLine)
+            const parsed = robustParse(metaLine)
             if (parsed.__meta__) {
               bookMeta = parsed.__meta__
               accumulated = accumulated.slice(newlineIdx + 1)
@@ -147,7 +158,7 @@ export default function Home() {
 
         if (!metaParsed) continue
 
-        // Try to parse the Gemini JSON progressively (Robust extraction)
+        // Try to parse the Gemini JSON progressively
         const cleanedJson = accumulated.replace(/```json|```/g, "").trim()
         try {
           let jsonToParse = cleanedJson
@@ -156,9 +167,11 @@ export default function Home() {
           
           if (startIdx !== -1 && endIdx !== -1) {
             jsonToParse = cleanedJson.substring(startIdx, endIdx + 1)
+          } else {
+             throw new Error("No JSON object found yet")
           }
           
-          const parsed = JSON.parse(jsonToParse)
+          const parsed = robustParse(jsonToParse)
           const enrichedBooks = (Array.isArray(parsed.books) ? parsed.books : []).map((rec: any) => {
             const original = bookMeta.find((b: any) => b.title === rec.title)
             return {
@@ -188,55 +201,61 @@ export default function Home() {
       if (startIdx !== -1 && endIdx !== -1) {
         jsonToParse = cleanedJson.substring(startIdx, endIdx + 1)
       }
-      const parsed = JSON.parse(jsonToParse)
-      const finalBooks = (Array.isArray(parsed.books) ? parsed.books : []).map((rec: any) => {
-        const original = bookMeta.find((b: any) => b.title === rec.title)
-        return {
-          ...rec,
-          bookId: original?.bookId || null,
-          author: original?.author || rec.author || "Unknown",
-          publisher: original?.publisher || null,
-          pubYear: original?.pubYear || null,
-          coverImage: original?.coverImage || null,
-        }
-      })
-      const finalData = { introMessage: parsed.introMessage || "", books: finalBooks }
-      setRecommendation(finalData)
+      
+      try {
+        const parsed = robustParse(jsonToParse)
+        const finalBooks = (Array.isArray(parsed.books) ? parsed.books : []).map((rec: any) => {
+          const original = bookMeta.find((b: any) => b.title === rec.title)
+          return {
+            ...rec,
+            bookId: original?.bookId || null,
+            author: original?.author || rec.author || "Unknown",
+            publisher: original?.publisher || null,
+            pubYear: original?.pubYear || null,
+            coverImage: original?.coverImage || null,
+          }
+        })
+        const finalData = { introMessage: parsed.introMessage || "", books: finalBooks }
+        setRecommendation(finalData)
 
-      // interaction_logs: recommendation_rendered (fire-and-forget)
-      fetch("/api/logs", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          sessionId,
-          userId: auth.currentUser?.uid ?? null,
-          eventType: "recommendation_rendered",
-          entryType,
-          themeId: themeId,
-          resolvedThemeIds: [themeId],
-          inputQuery: freeQueryResult?.inputQuery ?? null,
-          recommendedBookIds: finalData.books?.map((b: any) => b.bookId).filter(Boolean) ?? [],
-          deviceType: getDeviceType(),
-        }),
-      }).catch(err => console.error("Log failed", err))
-
-      // Save history if logged in
-      const user = auth.currentUser
-      if (user && finalData.books?.length > 0) {
-        fetch("/api/history", {
+        // interaction_logs: recommendation_rendered (fire-and-forget)
+        fetch("/api/logs", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            uid: user.uid,
+            sessionId,
+            userId: auth.currentUser?.uid ?? null,
+            eventType: "recommendation_rendered",
             entryType,
-            inputQuery: freeQueryResult?.inputQuery ?? null,
-            selectedThemeId: themeId,
-            selectedThemeLabel: themes.find((t) => t.themeId === themeId)?.name ?? "",
+            themeId: themeId,
             resolvedThemeIds: [themeId],
-            resolvedThemeLabels: [themes.find((t) => t.themeId === themeId)?.name ?? ""],
-            recommendedBooks: finalData.books,
+            inputQuery: freeQueryResult?.inputQuery ?? null,
+            recommendedBookIds: finalData.books?.map((b: any) => b.bookId).filter(Boolean) ?? [],
+            deviceType: getDeviceType(),
           }),
-        })
+        }).catch(err => console.error("Log failed", err))
+
+        // Save history if logged in
+        const user = auth.currentUser
+        if (user && finalData.books?.length > 0) {
+          fetch("/api/history", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              uid: user.uid,
+              entryType,
+              inputQuery: freeQueryResult?.inputQuery ?? null,
+              selectedThemeId: themeId,
+              selectedThemeLabel: themes.find((t) => t.themeId === themeId)?.name ?? "",
+              resolvedThemeIds: [themeId],
+              resolvedThemeLabels: [themes.find((t) => t.themeId === themeId)?.name ?? ""],
+              recommendedBooks: finalData.books,
+            }),
+          })
+        }
+      } catch (finalErr) {
+        console.error("Final JSON parse failed:", finalErr, jsonToParse)
+        throw finalErr
       }
     } catch (err) {
       console.error("Failed to fetch recommendation", err)
