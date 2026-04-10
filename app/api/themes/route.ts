@@ -115,6 +115,13 @@ export async function GET(request: NextRequest) {
       selectedThemes = [...selectedThemes, ...pickedOthers]
     })
 
+    // Fallback: If for some reason we picked nothing (e.g. encoding issues with keys), 
+    // return a default set of 20 themes at least.
+    if (selectedThemes.length === 0) {
+      console.warn("No themes selected in sampled logic, falling back to simple slice.")
+      selectedThemes = allThemes.slice(0, totalTargetCount)
+    }
+
     // Final shuffle to mix groups
     const finalThemes = shuffleArray(selectedThemes, random)
 
