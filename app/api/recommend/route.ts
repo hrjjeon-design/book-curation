@@ -28,8 +28,27 @@ export async function GET(request: Request) {
     const theme = themeDoc.data()!
     const curator = curatorDoc.data()!
 
-    // --- STEP 1: Gemini Candidate Generation ---
-    const step1Prompt = `
+    // Parse excludeIsbns from query params (for "show more" feature)
+    const excludeIsbns = searchParams.get("excludeIsbns")?.split(",").filter(Boolean) || []
+
+    // --- STEP 1 & 2: Try cache first, fallback to live generation ---
+    let verifiedBooks: any[] = []
+    let wasLiveGenerated = false
+
+    const cacheDoc = await db.collection("theme_books").doc(themeId).get()
+    if (cacheDoc.exists) {
+      const cacheData = cacheDoc.data()!
+      const allCachedBooks = cacheData.verifiedBooks || []
+      // Filter out already-seen books
+      verifiedBooks = allCachedBooks.filter(
+        (b: any) => !excludeIsbns.includes(b.isbn)
+      )
+    }
+
+    if (verifiedBooks.length === 0) {
+      wasLiveGenerated = true
+      // Cache miss or all books exhausted — fallback to live generation
+      const step1Prompt = `
 당신은 한국어 철학 도서 전문가입니다.
 
 다음 주제에 대해 추천할 만한 한국어 철학 도서 후보를 10권 제시하세요:
@@ -43,6 +62,7 @@ export async function GET(request: Request) {
 4. 고전과 현대 저작을 균형 있게 포함하세요
 5. 같은 저자의 책은 최대 1권까지만
 6. ISBN을 아는 경우 포함하세요
+${excludeIsbns.length > 0 ? `7. 다음 ISBN의 책은 이미 추천했으므로 제외하세요: ${excludeIsbns.join(", ")}` : ""}
 
 응답은 반드시 JSON 배열로만 보내주세요:
 [
@@ -57,7 +77,6 @@ export async function GET(request: Request) {
       const step1Text = step1Result.response.text()
       let candidates: GeminiCandidate[] = []
       try {
-        // Try to parse the Gemini JSON (Robust extraction)
         let jsonToParse = step1Text.trim()
         const startIdx = jsonToParse.indexOf("[")
         const endIdx = jsonToParse.lastIndexOf("]")
@@ -66,15 +85,15 @@ export async function GET(request: Request) {
         }
         candidates = JSON.parse(jsonToParse)
       } catch (e) {
-      console.error("Step 1 JSON Parse Error:", e, step1Text)
-      throw new Error("Failed to parse candidate list")
+        console.error("Step 1 JSON Parse Error:", e, step1Text)
+        throw new Error("Failed to parse candidate list")
+      }
+
+      verifiedBooks = await verifyBooks(candidates)
     }
 
-    // --- STEP 2: National Library of Korea Verification ---
-    const verifiedBooks = await verifyBooks(candidates)
-
     if (verifiedBooks.length === 0) {
-      console.warn(`[404] No verified books found for theme: ${themeId}. Candidates was:`, candidates.length)
+      console.warn(`[404] No verified books found for theme: ${themeId}.`)
       return Response.json({ error: "No verified books found for this theme" }, { status: 404 })
     }
 
@@ -162,8 +181,9 @@ ${JSON.stringify(verifiedBooks, null, 2)}
 
         // --- STEP 4: Store in Firestore (Fire-and-forget) ---
         // This runs after the stream starts/finishes or in parallel but we'll do it async here
-        (async () => {
+        ;(async () => {
           try {
+            // 1. Cache individual books
             for (const book of verifiedBooks) {
               const docRef = db.collection("books").doc(book.isbn)
               const doc = await docRef.get()
@@ -182,6 +202,25 @@ ${JSON.stringify(verifiedBooks, null, 2)}
                   createdAt: FieldValue.serverTimestamp(),
                 })
               }
+            }
+
+            // 2. theme_books 캐시 자동 구축 (캐시 미스로 라이브 생성한 경우만)
+            if (wasLiveGenerated) {
+              await db.collection("theme_books").doc(themeId).set({
+                themeId: themeId,
+                themeName: theme.name,
+                verifiedBooks: verifiedBooks.map((b: any) => ({
+                  title: b.title,
+                  author: b.author,
+                  publisher: b.publisher,
+                  pubYear: b.pubYear,
+                  isbn: b.isbn,
+                  coverImage: b.coverImage,
+                  description: b.description,
+                })),
+                totalCount: verifiedBooks.length,
+                cachedAt: FieldValue.serverTimestamp(),
+              })
             }
           } catch (e) {
             console.error("Firestore cache error:", e)

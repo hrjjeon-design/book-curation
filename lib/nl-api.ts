@@ -15,11 +15,16 @@ export interface VerifiedBook {
   description: string | null
 }
 
-const NL_API_KEY = process.env.NL_API_KEY || ""
 const BASE_URL = "https://www.nl.go.kr/seoji/SearchApi.do"
 
+function getNlApiKey(): string {
+  const key = process.env.NL_API_KEY || ""
+  if (!key) throw new Error("Missing NL_API_KEY")
+  return key
+}
+
 export async function searchByISBN(isbn: string): Promise<VerifiedBook | null> {
-  if (!NL_API_KEY) throw new Error("Missing NL_API_KEY")
+  const NL_API_KEY = getNlApiKey()
 
   try {
     const params = new URLSearchParams({
@@ -53,7 +58,7 @@ export async function searchByISBN(isbn: string): Promise<VerifiedBook | null> {
 }
 
 export async function searchByTitle(title: string, author?: string): Promise<VerifiedBook | null> {
-  if (!NL_API_KEY) throw new Error("Missing NL_API_KEY")
+  const NL_API_KEY = getNlApiKey()
 
   try {
     const params = new URLSearchParams({

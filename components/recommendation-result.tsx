@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowLeft, Loader2 } from "lucide-react"
+import { ArrowLeft, Loader2, ChevronDown } from "lucide-react"
 import { BookCard } from "@/components/book-card"
 
 interface Book {
@@ -21,10 +21,12 @@ interface RecommendationResultProps {
   introMessage: string
   books: Book[]
   streaming?: boolean
+  loadingMore?: boolean
   onBack: () => void
+  onShowMore?: () => void
 }
 
-export function RecommendationResult({ introMessage, books, streaming, onBack }: RecommendationResultProps) {
+export function RecommendationResult({ introMessage, books, streaming, loadingMore, onBack, onShowMore }: RecommendationResultProps) {
   return (
     <div className="max-w-2xl mx-auto px-5 py-8">
       <button
@@ -68,6 +70,28 @@ export function RecommendationResult({ introMessage, books, streaming, onBack }:
         <div className="flex items-center gap-2 text-muted-foreground text-sm py-6">
           <Loader2 className="w-4 h-4 animate-spin" />
           추천을 작성하고 있습니다...
+        </div>
+      )}
+
+      {!streaming && onShowMore && books.length > 0 && (
+        <div className="flex justify-center py-8">
+          <button
+            onClick={onShowMore}
+            disabled={loadingMore}
+            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-muted-foreground hover:text-foreground border border-border rounded-full hover:border-foreground/20 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {loadingMore ? (
+              <>
+                <Loader2 className="w-4 h-4 animate-spin" />
+                다른 책을 찾고 있습니다...
+              </>
+            ) : (
+              <>
+                <ChevronDown className="w-4 h-4" />
+                다른 책도 보기
+              </>
+            )}
+          </button>
         </div>
       )}
     </div>

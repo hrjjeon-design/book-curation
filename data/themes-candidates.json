@@ -1,0 +1,4622 @@
+[
+  {
+    "themeId": "meaning_of_success_failure_philosophy",
+    "name": "성공과 실패의 의미를 되물을 때 읽는 철학",
+    "shortLabel": "성공실패",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "사회적 성공과 개인적 실패, 혹은 그 반대의 상황에서 진정한 가치를 탐색하게 하는 책.",
+    "relatedConcepts": [
+      "가치론",
+      "윤리학",
+      "실존주의",
+      "행복론",
+      "사회철학"
+    ],
+    "exampleQueries": [
+      "성공이란 무엇인가?",
+      "실패를 통해 배우는 지혜"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 101
+  },
+  {
+    "themeId": "work_burnout_philosophy",
+    "name": "직장 생활에 지쳐 회의감이 들 때 읽는 철학",
+    "shortLabel": "직장회의",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "반복되는 업무와 조직 내 갈등 속에서 일의 본질과 개인의 가치를 재발견하게 돕는 책.",
+    "relatedConcepts": [
+      "노동철학",
+      "실존주의",
+      "윤리학",
+      "자본주의 비판",
+      "행복론"
+    ],
+    "exampleQueries": [
+      "일의 의미를 찾고 싶어요",
+      "직장 스트레스 극복 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 102
+  },
+  {
+    "themeId": "competition_balance_philosophy",
+    "name": "경쟁 사회에서 균형을 찾고 싶을 때 읽는 철학",
+    "shortLabel": "경쟁균형",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "무한 경쟁 속에서 나만의 속도와 가치를 지키며 살아갈 지혜를 전하는 책.",
+    "relatedConcepts": [
+      "사회철학",
+      "윤리학",
+      "실존주의",
+      "동양철학",
+      "행복론"
+    ],
+    "exampleQueries": [
+      "경쟁 속에서 나를 지키는 법",
+      "스트레스 없는 삶의 방식"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 103
+  },
+  {
+    "themeId": "true_leadership_philosophy",
+    "name": "진정한 리더십이 무엇인지 고민할 때 읽는 철학",
+    "shortLabel": "리더십",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "조직이나 공동체를 이끌어가는 데 필요한 통찰과 윤리적 가치를 제시하는 책.",
+    "relatedConcepts": [
+      "정치철학",
+      "윤리학",
+      "공동체주의",
+      "통치론",
+      "사회철학"
+    ],
+    "exampleQueries": [
+      "올바른 리더의 자세",
+      "철학으로 보는 리더십"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 104
+  },
+  {
+    "themeId": "feeling_alienated_philosophy",
+    "name": "소외감을 느낄 때 읽는 철학",
+    "shortLabel": "소외감",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "사회 속에서 홀로 고립된 듯한 감정을 느낄 때, 공감과 위로를 얻고 관계의 의미를 되새기게 하는 책.",
+    "relatedConcepts": [
+      "실존주의",
+      "공동체주의",
+      "사회철학",
+      "윤리학",
+      "고독"
+    ],
+    "exampleQueries": [
+      "외로움과 고립감 극복",
+      "인간관계의 본질"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 105
+  },
+  {
+    "themeId": "friendship_conflict_philosophy",
+    "name": "친구 관계에서 갈등을 겪을 때 읽는 철학",
+    "shortLabel": "우정갈등",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "소중한 친구와의 관계에서 오해와 갈등이 생겼을 때, 관계의 지혜를 얻고 화해의 길을 모색하게 하는 책.",
+    "relatedConcepts": [
+      "윤리학",
+      "관계철학",
+      "공동체주의",
+      "소통",
+      "덕"
+    ],
+    "exampleQueries": [
+      "친구와 다툼 해결하기",
+      "우정의 의미를 되새기다"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 106
+  },
+  {
+    "themeId": "gossip_rumors_philosophy",
+    "name": "뒷담화와 소문에 흔들릴 때 읽는 철학",
+    "shortLabel": "소문흔들",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "불필요한 이야기나 평가에 마음이 흔들릴 때, 자기 중심을 잡고 타인의 시선에서 벗어나게 돕는 책.",
+    "relatedConcepts": [
+      "윤리학",
+      "자아론",
+      "사회심리학",
+      "명예",
+      "진실"
+    ],
+    "exampleQueries": [
+      "뒷담화에 대처하는 법",
+      "타인의 말에 흔들리지 않기"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 107
+  },
+  {
+    "themeId": "adapting_new_environment_philosophy",
+    "name": "낯선 환경에 적응하기 힘들 때 읽는 철학",
+    "shortLabel": "환경적응",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "이사, 전학, 이직 등 변화된 환경에서 오는 불안감을 극복하고 새로운 삶의 의미를 찾게 하는 책.",
+    "relatedConcepts": [
+      "실존주의",
+      "변화철학",
+      "적응론",
+      "정체성",
+      "주체성"
+    ],
+    "exampleQueries": [
+      "새로운 곳에서 정착하기",
+      "변화에 유연하게 대처하는 법"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 108
+  },
+  {
+    "themeId": "intergenerational_gap_philosophy",
+    "name": "부모와 자식 간의 세대 차이를 느낄 때 읽는 철학",
+    "shortLabel": "세대차이",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "가족 내에서 발생하는 세대 간의 가치관 차이를 이해하고, 서로 존중하는 지혜를 배우게 하는 책.",
+    "relatedConcepts": [
+      "가족철학",
+      "사회철학",
+      "윤리학",
+      "소통론",
+      "공감"
+    ],
+    "exampleQueries": [
+      "부모님과의 갈등 해소",
+      "세대 간 이해의 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 109
+  },
+  {
+    "themeId": "meaning_of_marriage_family_philosophy",
+    "name": "결혼과 가족의 의미를 고민할 때 읽는 철학",
+    "shortLabel": "결혼가족",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "결혼이라는 제도와 가족이라는 공동체의 본질적 의미를 탐구하며, 삶의 중요한 가치를 성찰하게 하는 책.",
+    "relatedConcepts": [
+      "가족철학",
+      "윤리학",
+      "공동체주의",
+      "사랑",
+      "관계철학"
+    ],
+    "exampleQueries": [
+      "결혼의 참된 의미",
+      "행복한 가정을 위한 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 110
+  },
+  {
+    "themeId": "weight_of_parenthood_philosophy",
+    "name": "부모가 된다는 것의 무게를 느낄 때 읽는 철학",
+    "shortLabel": "부모무게",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "아이를 키우며 겪는 희로애락 속에서 부모로서의 책임과 사랑, 그리고 자아 성찰의 지혜를 얻게 하는 책.",
+    "relatedConcepts": [
+      "교육철학",
+      "윤리학",
+      "돌봄윤리",
+      "사랑",
+      "책임"
+    ],
+    "exampleQueries": [
+      "좋은 부모가 되는 법",
+      "육아 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 111
+  },
+  {
+    "themeId": "habit_formation_philosophy",
+    "name": "습관을 만들고 유지하기 어려울 때 읽는 철학",
+    "shortLabel": "습관형성",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "의지박약이나 게으름 앞에서 좌절할 때, 자기 통제의 기술과 삶의 효율성을 높이는 지혜를 제공하는 책.",
+    "relatedConcepts": [
+      "실천철학",
+      "윤리학",
+      "자기계발",
+      "의지",
+      "행동경제학"
+    ],
+    "exampleQueries": [
+      "나쁜 습관 고치기",
+      "자기 절제의 힘"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 112
+  },
+  {
+    "themeId": "overcoming_laziness_philosophy",
+    "name": "게으름과 나태함에서 벗어나고 싶을 때 읽는 철학",
+    "shortLabel": "게으름탈출",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "해야 할 일을 미루거나 무기력에 빠졌을 때, 행동의 동기를 부여하고 삶의 활력을 되찾게 하는 책.",
+    "relatedConcepts": [
+      "실천철학",
+      "의지론",
+      "윤리학",
+      "동기부여",
+      "시간관리"
+    ],
+    "exampleQueries": [
+      "게으름 극복하기",
+      "생산적인 삶을 위한 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 113
+  },
+  {
+    "themeId": "overcoming_fear_philosophy",
+    "name": "두려움 때문에 새로운 도전을 망설일 때 읽는 철학",
+    "shortLabel": "도전용기",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "실패에 대한 막연한 두려움이나 변화에 대한 불안으로 나아가지 못할 때, 용기와 지혜를 주는 책.",
+    "relatedConcepts": [
+      "실존주의",
+      "용기",
+      "변화철학",
+      "회복탄력성",
+      "주체성"
+    ],
+    "exampleQueries": [
+      "실패가 두려울 때 읽는 책",
+      "용기를 내는 법"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 114
+  },
+  {
+    "themeId": "low_self_esteem_philosophy",
+    "name": "자존감이 낮아 힘들어할 때 읽는 철학",
+    "shortLabel": "자존감",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "자기 자신을 가치 없다고 느끼거나 스스로를 사랑하기 어려울 때, 내면의 가치를 발견하고 자존감을 높이게 하는 책.",
+    "relatedConcepts": [
+      "자아론",
+      "윤리학",
+      "실존주의",
+      "자기애",
+      "주체성"
+    ],
+    "exampleQueries": [
+      "자존감 회복 방법",
+      "나를 사랑하는 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 115
+  },
+  {
+    "themeId": "daily_apathy_philosophy",
+    "name": "매일 똑같은 일상에 권태를 느낄 때 읽는 철학",
+    "shortLabel": "일상권태",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "반복되는 삶 속에서 의미를 잃고 무기력해질 때, 새로운 관점과 삶의 활력을 불어넣는 책.",
+    "relatedConcepts": [
+      "실존주의",
+      "허무주의",
+      "행복론",
+      "의미론",
+      "변화철학"
+    ],
+    "exampleQueries": [
+      "일상의 의미를 찾는 법",
+      "권태로운 삶에 활력 불어넣기"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 116
+  },
+  {
+    "themeId": "money_value_desire_philosophy",
+    "name": "돈의 가치와 욕망에 대해 성찰할 때 읽는 철학",
+    "shortLabel": "돈의가치",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "부와 빈곤, 소비와 절약 사이에서 돈의 진정한 의미와 인간의 욕망을 탐구하게 하는 책.",
+    "relatedConcepts": [
+      "경제철학",
+      "윤리학",
+      "가치론",
+      "소비주의",
+      "행복론"
+    ],
+    "exampleQueries": [
+      "돈과 행복의 관계",
+      "철학으로 본 소비"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 117
+  },
+  {
+    "themeId": "meaning_of_aging_philosophy",
+    "name": "늙어간다는 것의 의미를 되새길 때 읽는 철학",
+    "shortLabel": "노년의미",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "노화와 죽음에 대한 불안 속에서 삶의 유한성을 받아들이고, 충만한 삶의 의미를 찾게 돕는 책.",
+    "relatedConcepts": [
+      "실존주의",
+      "죽음철학",
+      "시간철학",
+      "존재론",
+      "지혜"
+    ],
+    "exampleQueries": [
+      "나이 듦의 지혜",
+      "노년의 삶을 위한 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 118
+  },
+  {
+    "themeId": "physical_limits_illness_philosophy",
+    "name": "신체적 한계와 질병 앞에서 좌절할 때 읽는 철학",
+    "shortLabel": "질병좌절",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "건강 문제로 어려움을 겪을 때, 고통을 이해하고 삶의 긍정적인 면을 발견하게 돕는 책.",
+    "relatedConcepts": [
+      "고통철학",
+      "생명철학",
+      "실존주의",
+      "회복탄력성",
+      "윤리학"
+    ],
+    "exampleQueries": [
+      "질병과 고통에 대한 철학",
+      "삶의 유한성 받아들이기"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 119
+  },
+  {
+    "themeId": "body_mind_understanding_philosophy",
+    "name": "나의 몸과 마음에 대한 이해가 필요할 때 읽는 철학",
+    "shortLabel": "몸마음이해",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "몸과 마음의 유기적인 관계를 탐구하고, 균형 잡힌 삶을 위한 자기 이해의 길을 제시하는 책.",
+    "relatedConcepts": [
+      "심신문제",
+      "자아론",
+      "동양철학",
+      "심리학",
+      "건강철학"
+    ],
+    "exampleQueries": [
+      "몸과 마음의 조화",
+      "나 자신을 알아가는 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 120
+  },
+  {
+    "themeId": "indecision_confusion_philosophy",
+    "name": "어떤 선택도 정답 같지 않아 혼란스러울 때 읽는 철학",
+    "shortLabel": "선택혼란",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "여러 갈림길 앞에서 어떤 결정도 내리지 못하고 방황할 때, 자신만의 기준을 세우고 지혜로운 선택을 돕는 책.",
+    "relatedConcepts": [
+      "윤리학",
+      "실천철학",
+      "자유의지",
+      "책임",
+      "의사결정"
+    ],
+    "exampleQueries": [
+      "올바른 선택을 위한 철학",
+      "결정 장애 극복"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 121
+  },
+  {
+    "themeId": "living_without_regret_philosophy",
+    "name": "후회 없이 살기 위한 지혜를 구할 때 읽는 철학",
+    "shortLabel": "후회없는삶",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "과거의 실수에 얽매이지 않고 현재를 충실히 살아가며 미래를 지혜롭게 준비하는 방법을 제시하는 책.",
+    "relatedConcepts": [
+      "실존주의",
+      "윤리학",
+      "시간철학",
+      "현재주의",
+      "용서"
+    ],
+    "exampleQueries": [
+      "후회하지 않는 삶의 방식",
+      "현재를 소중히 여기는 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 122
+  },
+  {
+    "themeId": "embracing_risk_change_philosophy",
+    "name": "위험을 감수하고 변화를 시도해야 할 때 읽는 철학",
+    "shortLabel": "변화도전",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "안정된 현재를 벗어나 미지의 영역으로 나아갈 때, 용기와 결단을 제공하고 새로운 가능성을 탐색하게 하는 책.",
+    "relatedConcepts": [
+      "실존주의",
+      "변화철학",
+      "용기",
+      "결단",
+      "불확실성"
+    ],
+    "exampleQueries": [
+      "안정 대신 변화를 택할 때",
+      "과감한 도전을 위한 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 123
+  },
+  {
+    "themeId": "information_overload_perspective_philosophy",
+    "name": "정보 과부하 속에서 나만의 관점을 찾을 때 읽는 철학",
+    "shortLabel": "관점찾기",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "넘쳐나는 정보 속에서 혼란을 느끼거나 비판적 사고가 필요할 때, 자신만의 시각을 형성하도록 돕는 책.",
+    "relatedConcepts": [
+      "인식론",
+      "비판적 사고",
+      "지식론",
+      "정보사회론",
+      "분별력"
+    ],
+    "exampleQueries": [
+      "정보 홍수 속 지혜",
+      "나만의 생각 만들기"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 124
+  },
+  {
+    "themeId": "distraction_focus_philosophy",
+    "name": "관심이 분산되어 집중하기 어려울 때 읽는 철학",
+    "shortLabel": "집중력",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "주의가 산만해지거나 한 가지 일에 몰두하기 힘들 때, 몰입의 가치를 깨닫고 정신적인 힘을 기르게 하는 책.",
+    "relatedConcepts": [
+      "의식",
+      "마음챙김",
+      "실천철학",
+      "존재론",
+      "자기통제"
+    ],
+    "exampleQueries": [
+      "집중력을 높이는 방법",
+      "산만한 마음 다스리기"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 125
+  },
+  {
+    "themeId": "creative_inspiration_philosophy",
+    "name": "창의적인 영감이 필요할 때 읽는 철학",
+    "shortLabel": "창의영감",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "새로운 아이디어나 예술적 영감을 얻고 싶을 때, 상상력과 사고의 폭을 넓혀주는 책.",
+    "relatedConcepts": [
+      "미학",
+      "상상력",
+      "창조론",
+      "예술철학",
+      "인식론"
+    ],
+    "exampleQueries": [
+      "창의성을 키우는 법",
+      "영감을 주는 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 126
+  },
+  {
+    "themeId": "meaning_of_leisure_rest_philosophy",
+    "name": "진정한 여가와 휴식의 의미를 찾을 때 읽는 철학",
+    "shortLabel": "여가휴식",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "바쁜 일상 속에서 진정한 휴식의 가치를 잊어버렸을 때, 삶의 균형과 여유를 되찾게 하는 책.",
+    "relatedConcepts": [
+      "행복론",
+      "노동철학",
+      "실천철학",
+      "삶의 질",
+      "자기관리"
+    ],
+    "exampleQueries": [
+      "제대로 쉬는 방법",
+      "삶의 균형을 위한 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 127
+  },
+  {
+    "themeId": "futility_impermanence_philosophy",
+    "name": "인생의 허무함과 무상함을 느낄 때 읽는 철학",
+    "shortLabel": "허무무상",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "모든 것이 덧없다고 느껴질 때, 삶의 유한성 속에서 의미를 찾아내고 평온을 얻게 하는 책.",
+    "relatedConcepts": [
+      "허무주의",
+      "실존주의",
+      "불교철학",
+      "시간철학",
+      "존재론"
+    ],
+    "exampleQueries": [
+      "허무주의 극복",
+      "삶의 무상함 받아들이기"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 128
+  },
+  {
+    "themeId": "chance_necessity_causality_philosophy",
+    "name": "우연과 필연, 인과관계에 대해 숙고할 때 읽는 철학",
+    "shortLabel": "우연필연",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "삶에서 벌어지는 사건들이 우연인지 필연인지 궁금할 때, 세상의 질서와 개인의 역할을 탐구하는 책.",
+    "relatedConcepts": [
+      "형이상학",
+      "인과론",
+      "운명론",
+      "자유의지",
+      "확률"
+    ],
+    "exampleQueries": [
+      "우연은 존재하는가?",
+      "세상 모든 일의 원인과 결과"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 129
+  },
+  {
+    "themeId": "anger_management_philosophy",
+    "name": "화를 다스리고 평정심을 찾고 싶을 때 읽는 철학",
+    "shortLabel": "화다스림",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "분노와 격정적인 감정에 휩싸일 때, 마음을 다스리고 평온을 유지하는 지혜를 제공하는 책.",
+    "relatedConcepts": [
+      "윤리학",
+      "스토아 철학",
+      "감정론",
+      "자기통제",
+      "동양철학"
+    ],
+    "exampleQueries": [
+      "분노 조절하는 법",
+      "평정심을 기르는 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 130
+  },
+  {
+    "themeId": "envy_jealousy_philosophy",
+    "name": "시기심과 질투심 때문에 괴로울 때 읽는 철학",
+    "shortLabel": "시기질투",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "타인의 성공이나 행복을 보며 시기와 질투의 감정에 사로잡힐 때, 자신을 돌아보고 긍정적인 마음을 갖게 하는 책.",
+    "relatedConcepts": [
+      "윤리학",
+      "자아론",
+      "감정론",
+      "사회철학",
+      "자기성찰"
+    ],
+    "exampleQueries": [
+      "시기심 극복 방법",
+      "질투심 다스리기"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 131
+  },
+  {
+    "themeId": "shame_guilt_philosophy",
+    "name": "수치심과 죄책감에 시달릴 때 읽는 철학",
+    "shortLabel": "수치죄책",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "과거의 행동이나 자신의 존재 자체에 대해 수치심이나 죄책감을 느낄 때, 스스로를 용서하고 나아갈 용기를 주는 책.",
+    "relatedConcepts": [
+      "윤리학",
+      "실존주의",
+      "자유의지",
+      "책임",
+      "용서"
+    ],
+    "exampleQueries": [
+      "죄책감에서 벗어나는 법",
+      "수치심 극복하기"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 132
+  },
+  {
+    "themeId": "empathy_understanding_philosophy",
+    "name": "공감 능력과 타인 이해의 폭을 넓히고 싶을 때 읽는 철학",
+    "shortLabel": "공감이해",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "다른 사람의 입장과 감정을 더 깊이 이해하고 싶을 때, 소통의 지혜와 관계의 본질을 탐구하게 하는 책.",
+    "relatedConcepts": [
+      "윤리학",
+      "관계철학",
+      "공동체주의",
+      "소통론",
+      "타자론"
+    ],
+    "exampleQueries": [
+      "타인의 마음을 읽는 법",
+      "공감 능력 향상 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 133
+  },
+  {
+    "themeId": "learning_forgiveness_philosophy",
+    "name": "용서하는 마음을 배우고 싶을 때 읽는 철학",
+    "shortLabel": "용서마음",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "자신이나 타인의 잘못을 용서하기 어려울 때, 마음의 짐을 내려놓고 평화를 찾아가는 길을 제시하는 책.",
+    "relatedConcepts": [
+      "윤리학",
+      "실천철학",
+      "자아론",
+      "용서",
+      "화해"
+    ],
+    "exampleQueries": [
+      "용서의 의미와 힘",
+      "나 자신을 용서하는 법"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 134
+  },
+  {
+    "themeId": "differing_opinions_frustration_philosophy",
+    "name": "나와 다른 생각에 답답함을 느낄 때 읽는 철학",
+    "shortLabel": "다름인정",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "다양한 가치관과 의견 속에서 이해의 폭을 넓히고, 다름을 인정하며 공존하는 지혜를 배우게 하는 책.",
+    "relatedConcepts": [
+      "다원주의",
+      "소통론",
+      "윤리학",
+      "공동체주의",
+      "관용"
+    ],
+    "exampleQueries": [
+      "다름을 이해하는 법",
+      "생각의 차이를 좁히는 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 135
+  },
+  {
+    "themeId": "uncertain_future_anxiety_philosophy",
+    "name": "불확실한 미래 앞에서 불안할 때 읽는 철학",
+    "shortLabel": "미래불안",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "예측할 수 없는 내일에 대한 막연한 불안감에 사로잡힐 때, 현재에 집중하고 용기를 얻게 하는 책.",
+    "relatedConcepts": [
+      "실존주의",
+      "허무주의",
+      "스토아 철학",
+      "시간철학",
+      "불확실성"
+    ],
+    "exampleQueries": [
+      "미래에 대한 불안감 해소",
+      "불확실성을 다루는 지혜"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 136
+  },
+  {
+    "themeId": "gratitude_small_things_philosophy",
+    "name": "사소한 것에 감사하며 행복을 느끼고 싶을 때 읽는 철학",
+    "shortLabel": "소소행복",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "일상의 작은 순간들에서 의미와 기쁨을 발견하고, 감사하는 마음으로 삶의 만족도를 높이게 하는 책.",
+    "relatedConcepts": [
+      "행복론",
+      "미학",
+      "동양철학",
+      "마음챙김",
+      "현상학"
+    ],
+    "exampleQueries": [
+      "일상에서 행복 찾기",
+      "감사하는 마음의 중요성"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 137
+  },
+  {
+    "themeId": "self_control_patience_philosophy",
+    "name": "자기 절제와 인내의 가치를 배우고 싶을 때 읽는 철학",
+    "shortLabel": "절제인내",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "즉각적인 만족을 추구하기보다 긴 안목으로 목표를 향해 나아가며, 내면의 힘을 기르게 돕는 책.",
+    "relatedConcepts": [
+      "스토아 철학",
+      "윤리학",
+      "실천철학",
+      "의지",
+      "덕"
+    ],
+    "exampleQueries": [
+      "인내심을 기르는 철학",
+      "자기 통제의 기술"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 138
+  },
+  {
+    "themeId": "absurdity_irrationality_philosophy",
+    "name": "삶의 부조리와 불합리함을 이해하고 싶을 때 읽는 철학",
+    "shortLabel": "삶의부조리",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "인생의 불합리하고 이해할 수 없는 측면들을 직면하며, 그 속에서 의미를 찾아나가려는 노력을 탐구하는 책.",
+    "relatedConcepts": [
+      "부조리 철학",
+      "실존주의",
+      "허무주의",
+      "존재론",
+      "니힐리즘"
+    ],
+    "exampleQueries": [
+      "인생의 부조리 극복",
+      "삶의 불합리성 받아들이기"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 139
+  },
+  {
+    "themeId": "others_expectations_burden_philosophy",
+    "name": "주변 사람들의 기대가 부담스러울 때 읽는 철학",
+    "shortLabel": "기대부담",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "가족, 친구, 동료 등 가까운 이들의 기대와 시선이 무겁게 느껴질 때, 스스로의 삶을 주체적으로 살아가도록 돕는 책.",
+    "relatedConcepts": [
+      "자아론",
+      "실존주의",
+      "윤리학",
+      "주체성",
+      "자유의지"
+    ],
+    "exampleQueries": [
+      "타인의 기대에서 벗어나기",
+      "나의 길을 가는 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 140
+  },
+  {
+    "themeId": "meaning_of_vocation_philosophy",
+    "name": "나의 소명이 무엇인지 찾고 싶을 때 읽는 철학",
+    "shortLabel": "나의소명",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "직업이나 인생의 방향에 대한 깊은 고민 속에서, 나만의 재능과 열정을 발견하고 의미 있는 삶을 설계하게 하는 책.",
+    "relatedConcepts": [
+      "실존주의",
+      "소명론",
+      "가치론",
+      "자기성찰",
+      "행복론"
+    ],
+    "exampleQueries": [
+      "나의 천직을 찾고 싶어요",
+      "삶의 소명을 발견하는 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 141
+  },
+  {
+    "themeId": "overcoming_prejudice_philosophy",
+    "name": "편견과 고정관념에서 벗어나고 싶을 때 읽는 철학",
+    "shortLabel": "편견극복",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "무심코 가지고 있던 선입견이나 사회적 고정관념에서 벗어나, 세상을 더 넓고 유연하게 바라볼 통찰을 주는 책.",
+    "relatedConcepts": [
+      "인식론",
+      "사회철학",
+      "비판적 사고",
+      "다문화주의",
+      "관용"
+    ],
+    "exampleQueries": [
+      "편견 없이 세상을 보는 법",
+      "고정관념 깨부수는 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 142
+  },
+  {
+    "themeId": "facing_betrayal_philosophy",
+    "name": "배신감과 상처로 고통받을 때 읽는 철학",
+    "shortLabel": "배신상처",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "믿었던 사람에게 배신당해 깊은 상처를 입었을 때, 마음의 회복을 돕고 관계의 본질을 성찰하게 하는 책.",
+    "relatedConcepts": [
+      "윤리학",
+      "관계철학",
+      "정의론",
+      "용서",
+      "회복탄력성"
+    ],
+    "exampleQueries": [
+      "배신감 극복하기",
+      "상처받은 마음 치유하는 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 143
+  },
+  {
+    "themeId": "confronting_injustice_philosophy",
+    "name": "세상의 불의에 맞서는 용기가 필요할 때 읽는 철학",
+    "shortLabel": "불의용기",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "개인이나 사회적 차원에서 불공정한 상황을 목격하고, 침묵하지 않고 목소리를 낼 용기를 찾게 하는 책.",
+    "relatedConcepts": [
+      "정의론",
+      "윤리학",
+      "사회철학",
+      "시민불복종",
+      "용기"
+    ],
+    "exampleQueries": [
+      "불의에 대처하는 법",
+      "사회 정의를 위한 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 144
+  },
+  {
+    "themeId": "grappling_with_power_philosophy",
+    "name": "권력의 속성과 영향력에 대해 생각할 때 읽는 철학",
+    "shortLabel": "권력사고",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "권력이 개인의 삶과 사회에 미치는 영향을 탐구하며, 권력의 본질과 윤리적 사용에 대해 고민하게 하는 책.",
+    "relatedConcepts": [
+      "정치철학",
+      "사회철학",
+      "권력론",
+      "윤리학",
+      "통치론"
+    ],
+    "exampleQueries": [
+      "권력이란 무엇인가?",
+      "권력의 오용을 막는 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 145
+  },
+  {
+    "themeId": "seeking_authenticity_philosophy",
+    "name": "나의 진정한 모습을 찾고 싶을 때 읽는 철학",
+    "shortLabel": "진정나",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "사회적 가면을 벗어던지고 내면의 목소리에 귀 기울여, 자신만의 고유한 정체성과 삶의 방식을 발견하게 하는 책.",
+    "relatedConcepts": [
+      "실존주의",
+      "자아론",
+      "정체성",
+      "주체성",
+      "진정성"
+    ],
+    "exampleQueries": [
+      "나답게 사는 법",
+      "진정한 자아 탐색 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 146
+  },
+  {
+    "themeId": "materialism_reflection_philosophy",
+    "name": "물질 만능주의 시대에 정신적 가치를 찾을 때 읽는 철학",
+    "shortLabel": "정신가치",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "물질적인 풍요 속에서 공허함을 느끼거나, 삶의 본질적인 행복과 의미를 정신적인 영역에서 찾고자 할 때 읽는 책.",
+    "relatedConcepts": [
+      "가치론",
+      "행복론",
+      "소비주의 비판",
+      "영성",
+      "실존주의"
+    ],
+    "exampleQueries": [
+      "물질주의를 벗어나는 법",
+      "진정한 행복은 어디에?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 147
+  },
+  {
+    "themeId": "communication_difficulty_philosophy",
+    "name": "다른 사람과 소통이 어렵다고 느낄 때 읽는 철학",
+    "shortLabel": "소통어려움",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "타인과의 대화나 관계 맺기에 어려움을 느낄 때, 효과적인 소통의 원리와 공감하는 방법을 배우게 하는 책.",
+    "relatedConcepts": [
+      "언어철학",
+      "소통론",
+      "관계철학",
+      "화용론",
+      "타자론"
+    ],
+    "exampleQueries": [
+      "대화의 기술을 배우고 싶어요",
+      "소통 부재 시대의 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 148
+  },
+  {
+    "themeId": "dealing_with_loss_change_philosophy",
+    "name": "익숙한 것을 잃고 변화를 맞이해야 할 때 읽는 철학",
+    "shortLabel": "상실변화",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "오랫동안 유지했던 관계, 환경, 습관 등을 상실하고 새로운 변화를 받아들여야 할 때, 마음을 다잡고 미래를 준비하게 하는 책.",
+    "relatedConcepts": [
+      "변화철학",
+      "상실",
+      "실존주의",
+      "회복탄력성",
+      "죽음철학"
+    ],
+    "exampleQueries": [
+      "이별 후 마음 다스리기",
+      "변화를 두려워하지 않는 법"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 149
+  },
+  {
+    "themeId": "managing_expectations_philosophy",
+    "name": "기대에 미치지 못할까 봐 걱정될 때 읽는 철학",
+    "shortLabel": "기대걱정",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "스스로의 기대나 타인의 기대에 부응하지 못할까 봐 불안할 때, 완벽주의에서 벗어나 성장하는 지혜를 주는 책.",
+    "relatedConcepts": [
+      "자아론",
+      "실존주의",
+      "윤리학",
+      "완벽주의",
+      "자기수용"
+    ],
+    "exampleQueries": [
+      "기대감에서 오는 압박감 해소",
+      "완벽하지 않아도 괜찮은 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 150
+  },
+  {
+    "themeId": "helplessness_in_daily_injustice",
+    "name": "일상 속 작은 불의에 무력감을 느낄 때 읽는 철학",
+    "shortLabel": "무력감",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "일상에서 마주하는 작고 반복적인 불의 앞에서 느끼는 개인적인 무력감과 좌절감을 철학적으로 성찰하는 책들입니다.",
+    "relatedConcepts": [
+      "악의 평범성",
+      "개인의 책임",
+      "사회 정의",
+      "윤리적 무감각",
+      "구조적 불평등"
+    ],
+    "exampleQueries": [
+      "작은 불의에 화가 나지만 아무것도 못 할 때",
+      "일상의 부당함에 지쳐갈 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 151
+  },
+  {
+    "themeId": "finding_my_own_value",
+    "name": "타인의 시선이 아닌 나만의 가치를 찾고 싶을 때 읽는 철학",
+    "shortLabel": "내면가치",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "외부의 시선이나 사회적 기대에서 벗어나, 자기 내부의 진정한 가치와 기준을 발견하고자 할 때 필요한 철학적 지혜를 제공합니다.",
+    "relatedConcepts": [
+      "자아",
+      "자기 정체성",
+      "진정성",
+      "자율성",
+      "개별성"
+    ],
+    "exampleQueries": [
+      "남들처럼 살기 싫을 때 나만의 가치를 찾고 싶어요",
+      "타인의 평가에 휘둘리지 않는 법"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 152
+  },
+  {
+    "themeId": "fear_of_new_technology",
+    "name": "새로운 기술의 발전이 두렵고 불안할 때 읽는 철학",
+    "shortLabel": "기술불안",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "빠르게 변화하는 기술 발전이 가져오는 미지의 미래와 그로 인한 개인적인 두려움, 불안감을 철학적으로 탐구하는 책들입니다.",
+    "relatedConcepts": [
+      "기술 결정론",
+      "인간 본질",
+      "진보의 양면성",
+      "위험 사회",
+      "실존적 불안"
+    ],
+    "exampleQueries": [
+      "인공지능 발전이 두려워요",
+      "미래 기술에 대한 막연한 불안감 해소"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 153
+  },
+  {
+    "themeId": "finding_meaning_in_discomfort",
+    "name": "사소한 불편함과 불만을 넘어 의미를 찾고 싶을 때 읽는 철학",
+    "shortLabel": "불편의미",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "일상에서 겪는 사소한 불편함이나 불평 속에서도 삶의 더 깊은 의미나 깨달음을 얻고자 할 때 도움이 되는 철학적 시각을 제시합니다.",
+    "relatedConcepts": [
+      "긍정적 사고",
+      "회복탄력성",
+      "의미 추구",
+      "현상학",
+      "일상의 철학"
+    ],
+    "exampleQueries": [
+      "불편한 상황에서 긍정적인 면 찾기",
+      "일상의 짜증을 견디는 지혜"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 154
+  },
+  {
+    "themeId": "listening_to_inner_voice",
+    "name": "내면의 목소리에 귀 기울이고 싶을 때 읽는 철학",
+    "shortLabel": "내면청취",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "외부의 소란에서 벗어나 자기 내면의 직관이나 진실된 욕구에 집중하고, 그에 따라 삶의 방향을 설정하고자 할 때 유용한 철학적 통찰을 제공합니다.",
+    "relatedConcepts": [
+      "직관",
+      "자기 성찰",
+      "무의식",
+      "명상",
+      "진정한 자아"
+    ],
+    "exampleQueries": [
+      "내 마음이 시키는 대로 살고 싶을 때",
+      "자기 내면의 소리에 집중하는 법"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 155
+  },
+  {
+    "themeId": "rethinking_consumption_meaning",
+    "name": "소유와 소비의 의미를 다시 생각하고 싶을 때 읽는 철학",
+    "shortLabel": "소비성찰",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "물질적인 소유와 소비 행위가 삶에 미치는 영향을 성찰하고, 진정한 만족과 행복을 얻기 위한 태도를 모색하는 책들입니다.",
+    "relatedConcepts": [
+      "소비주의",
+      "물질 만능주의",
+      "미니멀리즘",
+      "행복론",
+      "욕망의 철학"
+    ],
+    "exampleQueries": [
+      "물건에 너무 집착하는 것 같을 때",
+      "소비 행위의 의미를 되새기고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 156
+  },
+  {
+    "themeId": "peace_through_nature",
+    "name": "자연과의 교감 속에서 평화를 얻고 싶을 때 읽는 철학",
+    "shortLabel": "자연평화",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "자연과의 깊은 교류를 통해 내면의 평온을 찾고, 삶의 복잡함 속에서 균형을 회복하고자 할 때 영감을 주는 철학적 사유를 담고 있습니다.",
+    "relatedConcepts": [
+      "생태 철학",
+      "자연주의",
+      "범신론",
+      "환경 윤리",
+      "내면의 고요"
+    ],
+    "exampleQueries": [
+      "도시 생활에 지쳐 자연에서 위안을 찾을 때",
+      "자연 속에서 마음의 평화를 얻고 싶어요"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 157
+  },
+  {
+    "themeId": "wisdom_of_ignorance",
+    "name": "지식의 오만함과 무지의 지혜를 깨닫고 싶을 때 읽는 철학",
+    "shortLabel": "무지의지혜",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "자신이 모든 것을 안다고 착각하는 지적 오만함을 경계하고, 자신의 무지를 인정하는 것에서 진정한 지혜가 시작됨을 깨닫게 하는 책들입니다.",
+    "relatedConcepts": [
+      "소크라테스의 무지",
+      "회의주의",
+      "겸손",
+      "앎의 한계",
+      "비판적 사고"
+    ],
+    "exampleQueries": [
+      "아는 것이 많아도 답답할 때",
+      "무지를 인정하는 용기"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 158
+  },
+  {
+    "themeId": "essence_of_beauty_comfort",
+    "name": "아름다움의 본질과 그것이 주는 위로를 느끼고 싶을 때 읽는 철학",
+    "shortLabel": "미학위로",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "예술 작품이나 자연, 일상 속에서 발견하는 아름다움이 삶에 어떤 의미와 위로를 주는지, 그 본질을 철학적으로 탐구하는 책들입니다.",
+    "relatedConcepts": [
+      "미학",
+      "숭고미",
+      "예술 철학",
+      "감각론",
+      "치유의 미학"
+    ],
+    "exampleQueries": [
+      "아름다움에서 위안을 얻고 싶을 때",
+      "예술 작품을 깊이 있게 이해하고 싶어요"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 159
+  },
+  {
+    "themeId": "contemplating_death_meaning",
+    "name": "삶의 끝자락에서 죽음의 의미를 성찰할 때 읽는 철학",
+    "shortLabel": "죽음성찰",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "삶의 유한성을 인식하고 죽음의 의미를 깊이 성찰함으로써, 현재의 삶을 더욱 충실하게 살아갈 지혜를 얻고자 할 때 읽는 책들입니다.",
+    "relatedConcepts": [
+      "실존주의",
+      "메멘토 모리",
+      "죽음학",
+      "허무주의",
+      "인생의 의미"
+    ],
+    "exampleQueries": [
+      "죽음에 대해 생각하며 삶을 되돌아볼 때",
+      "유한한 삶을 어떻게 살아야 할까"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 160
+  },
+  {
+    "themeId": "conflict_between_honesty_mask",
+    "name": "솔직함과 가면 사이에서 갈등할 때 읽는 철학",
+    "shortLabel": "가면갈등",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "사회생활에서 드러내는 모습과 내면의 진실된 자아 사이에서 갈등하며, 진정성과 관계 사이의 균형을 찾고자 할 때 읽는 철학입니다.",
+    "relatedConcepts": [
+      "진정성",
+      "페르소나",
+      "자기 연출",
+      "사회적 자아",
+      "타자와의 관계"
+    ],
+    "exampleQueries": [
+      "솔직해지는 것이 어려울 때",
+      "사회생활 속에서 나의 본모습을 잃어갈 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 161
+  },
+  {
+    "themeId": "realizing_futility_of_reputation",
+    "name": "명예와 평판의 덧없음을 깨달을 때 읽는 철학",
+    "shortLabel": "명예허무",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "타인의 평가나 사회적 명성이 주는 일시적인 만족감을 넘어, 진정한 자기 가치와 삶의 목표를 찾아가고 싶을 때 읽는 책들입니다.",
+    "relatedConcepts": [
+      "스토아 철학",
+      "에피쿠로스 학파",
+      "허영",
+      "자기만족",
+      "내면의 평온"
+    ],
+    "exampleQueries": [
+      "사람들의 시선이 피곤하게 느껴질 때",
+      "명성과 평판에 대한 집착을 버리고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 162
+  },
+  {
+    "themeId": "true_value_of_giving",
+    "name": "타인에게 베푸는 행위의 참된 가치를 알고 싶을 때 읽는 철학",
+    "shortLabel": "베풂가치",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "이타적인 행동과 나눔이 개인과 사회에 미치는 긍정적인 영향을 이해하고, 진정한 의미의 선행을 실천하고자 할 때 필요한 철학적 지침을 제공합니다.",
+    "relatedConcepts": [
+      "이타주의",
+      "자비",
+      "공동체 윤리",
+      "선행",
+      "공감"
+    ],
+    "exampleQueries": [
+      "나눔의 진정한 의미를 알고 싶을 때",
+      "어떻게 하면 타인에게 도움이 될 수 있을까"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 163
+  },
+  {
+    "themeId": "comfort_vs_growth_dilemma",
+    "name": "안락함의 유혹과 불편함 속 성장을 고민할 때 읽는 철학",
+    "shortLabel": "안락성장",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "편안함에 머무를 것인가, 불편함을 감수하고 성장할 것인가의 기로에서, 삶의 진정한 발전 방향을 모색하고자 할 때 읽는 책들입니다.",
+    "relatedConcepts": [
+      "성장 마인드셋",
+      "도전 정신",
+      "현상유지 편향",
+      "자기 극복",
+      "용기"
+    ],
+    "exampleQueries": [
+      "안락한 삶에 안주하고 있는 것 같을 때",
+      "성장을 위한 불편함을 받아들이는 법"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 164
+  },
+  {
+    "themeId": "balance_between_freedom_constraint",
+    "name": "자유와 제약 사이에서 균형을 찾고 싶을 때 읽는 철학",
+    "shortLabel": "자유균형",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "개인의 자유와 사회적 규범 또는 자기 내면의 한계 사이에서 갈등하며, 어떻게 조화로운 삶을 이룰 수 있을지 고민할 때 읽는 철학입니다.",
+    "relatedConcepts": [
+      "자유 의지",
+      "결정론",
+      "책임",
+      "윤리적 한계",
+      "자기 통제"
+    ],
+    "exampleQueries": [
+      "자유롭고 싶지만 책임감에 짓눌릴 때",
+      "제약 속에서 나만의 자유를 찾는 법"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 165
+  },
+  {
+    "themeId": "escaping_past_memories",
+    "name": "과거의 기억이 현재를 지배할 때 벗어나고 싶을 때 읽는 철학",
+    "shortLabel": "기억해방",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "좋든 싫든 과거의 기억에 얽매여 현재의 삶을 온전히 살지 못할 때, 그 기억의 그림자에서 벗어나 새로운 시작을 하고자 할 때 읽는 책들입니다.",
+    "relatedConcepts": [
+      "기억의 철학",
+      "시간의 본질",
+      "현재주의",
+      "트라우마",
+      "해방"
+    ],
+    "exampleQueries": [
+      "과거에 묶여 앞으로 나아가지 못할 때",
+      "씁쓸한 기억에서 벗어나고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 166
+  },
+  {
+    "themeId": "routine_vs_serendipity_dilemma",
+    "name": "계획된 일상과 우연한 행복 사이에서 방황할 때 읽는 철학",
+    "shortLabel": "일상우연",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "규칙적인 삶의 안정감과 예측 불가능한 우연이 주는 설렘 사이에서 어떤 가치를 더 중요하게 여길지 고민하며, 삶의 풍요로움을 찾고자 할 때 읽는 철학입니다.",
+    "relatedConcepts": [
+      "우연",
+      "필연",
+      "운명론",
+      "즉흥성",
+      "카오스 이론"
+    ],
+    "exampleQueries": [
+      "계획대로 살아야 할까, 운명에 맡겨야 할까?",
+      "일상의 루틴 속에서 특별함을 찾고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 167
+  },
+  {
+    "themeId": "power_of_silence_meaning_in_noise",
+    "name": "침묵의 힘과 소음 속 의미를 발견하고 싶을 때 읽는 철학",
+    "shortLabel": "침묵소음",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "끊임없이 쏟아지는 소음 속에서 진정한 침묵의 가치를 깨닫고, 혹은 소란 속에서도 자신만의 의미와 평온을 찾는 방법을 탐구하는 책들입니다.",
+    "relatedConcepts": [
+      "명상",
+      "존재론",
+      "감각의 철학",
+      "주의력",
+      "내면의 고요"
+    ],
+    "exampleQueries": [
+      "조용한 시간을 갖고 싶지만 그럴 수 없을 때",
+      "시끄러운 환경 속에서 나만의 평화를 찾고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 168
+  },
+  {
+    "themeId": "exploring_taste_formation",
+    "name": "취향의 형성 과정과 그 의미를 탐색하고 싶을 때 읽는 철학",
+    "shortLabel": "취향탐색",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "개인적인 선호와 미적 감각이 어떻게 형성되는지, 그리고 우리의 취향이 삶과 정체성에 어떤 영향을 미치는지 철학적으로 고찰하는 책들입니다.",
+    "relatedConcepts": [
+      "미학",
+      "취향 판단",
+      "문화 상대주의",
+      "정체성",
+      "감성론"
+    ],
+    "exampleQueries": [
+      "내 취향은 어떻게 만들어지는 걸까?",
+      "좋아하는 것들의 철학적 의미를 알고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 169
+  },
+  {
+    "themeId": "overcoming_fomo",
+    "name": "FOMO(놓칠까 봐 불안한 마음)에서 벗어나 현재에 집중하고 싶을 때 읽는 철학",
+    "shortLabel": "FOMO극복",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "타인의 삶과 비교하며 느끼는 '놓칠까 봐 불안한 마음'에서 벗어나, 지금 이 순간 자신의 삶에 온전히 집중하고 만족하는 방법을 찾고자 할 때 읽는 철학입니다.",
+    "relatedConcepts": [
+      "현재주의",
+      "비교",
+      "만족",
+      "자기 수용",
+      "마음챙김"
+    ],
+    "exampleQueries": [
+      "남들 다 하는 걸 나만 안 하는 것 같아 불안할 때",
+      "FOMO에 시달리지 않고 행복해지고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 170
+  },
+  {
+    "themeId": "finding_meaning_in_small_rituals",
+    "name": "나만의 작은 의식에서 큰 의미를 찾고 싶을 때 읽는 철학",
+    "shortLabel": "작은의식",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "거창하지 않더라도 매일 반복하는 소소한 행동이나 습관 속에서 개인적인 의미와 삶의 질서를 발견하고 싶을 때 읽는 책들입니다.",
+    "relatedConcepts": [
+      "일상의 미학",
+      "의례",
+      "습관의 철학",
+      "자기 규율",
+      "의미 부여"
+    ],
+    "exampleQueries": [
+      "매일 하는 행동에서 의미를 찾고 싶을 때",
+      "나만의 작은 루틴이 소중해지는 순간"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 171
+  },
+  {
+    "themeId": "moral_ambiguity_judgment",
+    "name": "선과 악의 모호함 속에서 올바른 판단을 하고 싶을 때 읽는 철학",
+    "shortLabel": "선악판단",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "명확히 구분되지 않는 선과 악의 경계 속에서 복잡한 도덕적 문제를 마주했을 때, 현명하고 올바른 판단을 내리기 위한 철학적 지침을 제공합니다.",
+    "relatedConcepts": [
+      "윤리학",
+      "도덕적 딜레마",
+      "상황 윤리",
+      "덕 윤리",
+      "선의의 한계"
+    ],
+    "exampleQueries": [
+      "무엇이 옳고 그른지 판단하기 어려울 때",
+      "도덕적 회색 지대에서 현명한 선택을 하고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 172
+  },
+  {
+    "themeId": "exploring_essence_of_love",
+    "name": "사랑의 다양한 형태와 본질에 대해 깊이 알고 싶을 때 읽는 철학",
+    "shortLabel": "사랑본질",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "연인 간의 사랑을 넘어 가족, 친구, 인류애 등 사랑의 다양한 얼굴과 그 본질적인 의미를 탐구하며 관계의 깊이를 더하고 싶을 때 읽는 철학입니다.",
+    "relatedConcepts": [
+      "사랑의 철학",
+      "에로스",
+      "필리아",
+      "아가페",
+      "관계론"
+    ],
+    "exampleQueries": [
+      "사랑이란 무엇일까 궁금할 때",
+      "다양한 관계 속 사랑의 의미를 찾고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 173
+  },
+  {
+    "themeId": "meaning_of_humor_laughter",
+    "name": "유머와 웃음이 삶에 주는 의미를 생각할 때 읽는 철학",
+    "shortLabel": "유머의미",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "유머와 웃음이 단순한 즐거움을 넘어 삶의 고통을 완화하고, 세상에 대한 새로운 관점을 제공하며, 인간 본성에 어떤 영향을 미치는지 성찰하는 책들입니다.",
+    "relatedConcepts": [
+      "유머 철학",
+      "희극",
+      "낙천주의",
+      "정신 분석",
+      "놀이"
+    ],
+    "exampleQueries": [
+      "웃음의 철학적 의미를 탐구하고 싶을 때",
+      "유머를 통해 삶의 어려움을 극복하는 법"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 174
+  },
+  {
+    "themeId": "grieving_and_rebuilding_life",
+    "name": "상실의 슬픔을 마주하고 삶을 재정비하고 싶을 때 읽는 철학",
+    "shortLabel": "상실극복",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "소중한 사람이나 가치를 잃은 후 찾아오는 깊은 슬픔을 극복하고, 그 경험을 통해 삶의 의미를 재정의하며 다시 일어서고자 할 때 위로와 지혜를 주는 책들입니다.",
+    "relatedConcepts": [
+      "애도",
+      "죽음",
+      "트라우마",
+      "회복탄력성",
+      "의미 부여"
+    ],
+    "exampleQueries": [
+      "사랑하는 사람을 잃고 슬퍼할 때",
+      "상실의 고통을 딛고 다시 일어서고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 175
+  },
+  {
+    "themeId": "overcoming_aging_anxiety",
+    "name": "나이가 들어가는 것에 대한 불안감을 극복하고 싶을 때 읽는 철학",
+    "shortLabel": "노년불안",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "노화와 죽음에 대한 막연한 두려움이나 불안감을 긍정적으로 수용하고, 나이 듦의 지혜와 아름다움을 발견하며 충실한 노년의 삶을 준비하고자 할 때 읽는 철학입니다.",
+    "relatedConcepts": [
+      "노년학",
+      "실존주의",
+      "삶의 유한성",
+      "시간의 철학",
+      "자기 수용"
+    ],
+    "exampleQueries": [
+      "점점 늙어가는 것이 두려워요",
+      "나이 듦을 긍정적으로 받아들이고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 176
+  },
+  {
+    "themeId": "finding_will_in_illness",
+    "name": "병으로 인한 무기력감 속에서 삶의 의지를 찾고 싶을 때 읽는 철학",
+    "shortLabel": "병중의지",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "질병이나 신체적 한계로 인해 삶의 의욕을 잃고 무기력해질 때, 역경 속에서도 삶의 의미를 발견하고 희망을 놓지 않으려는 내면의 힘을 찾아주는 책들입니다.",
+    "relatedConcepts": [
+      "회복탄력성",
+      "의지의 철학",
+      "생의 의지",
+      "긍정 심리학",
+      "몸의 철학"
+    ],
+    "exampleQueries": [
+      "병 때문에 지쳐 삶의 의욕이 없을 때",
+      "질병을 이겨낼 정신적 힘을 얻고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 177
+  },
+  {
+    "themeId": "authentic_empathy_for_others",
+    "name": "타인의 아픔에 진정으로 공감하고 싶을 때 읽는 철학",
+    "shortLabel": "진정공감",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "단순히 타인의 고통을 이해하는 것을 넘어, 그들의 감정에 깊이 몰입하고 함께 아파하며, 진정한 공감과 연대의 의미를 실천하고자 할 때 읽는 철학입니다.",
+    "relatedConcepts": [
+      "현상학",
+      "공감",
+      "타자",
+      "윤리적 책임",
+      "동정심"
+    ],
+    "exampleQueries": [
+      "타인의 아픔에 깊이 공감하고 싶을 때",
+      "진정한 의미의 공감 능력을 키우고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 178
+  },
+  {
+    "themeId": "overcoming_indecisiveness",
+    "name": "결정 장애를 극복하고 단호한 선택을 하고 싶을 때 읽는 철학",
+    "shortLabel": "결정극복",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "사소한 것부터 중대한 일까지 결정을 내리기 어려워 고민에 빠질 때, 주저함을 극복하고 자신 있게 선택하며 그 결과에 책임지는 용기를 길러주는 책들입니다.",
+    "relatedConcepts": [
+      "자율성",
+      "의지",
+      "선택의 자유",
+      "책임",
+      "실천 철학"
+    ],
+    "exampleQueries": [
+      "어떤 것도 결정하기 어려워 답답할 때",
+      "결정 장애를 극복하고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 179
+  },
+  {
+    "themeId": "escaping_perfectionism",
+    "name": "완벽주의의 굴레에서 벗어나 편안함을 찾고 싶을 때 읽는 철학",
+    "shortLabel": "완벽탈출",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "모든 것을 완벽하게 해내야 한다는 강박에서 벗어나, 불완전함을 수용하고 스스로에게 너그러워지는 법을 배우며 마음의 평안을 찾고자 할 때 읽는 철학입니다.",
+    "relatedConcepts": [
+      "자기 수용",
+      "불완전성",
+      "스트레스",
+      "실존주의",
+      "해방"
+    ],
+    "exampleQueries": [
+      "완벽해야 한다는 압박감에 시달릴 때",
+      "실수해도 괜찮다는 것을 깨닫고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 180
+  },
+  {
+    "themeId": "self_acceptance_beyond_criticism",
+    "name": "지나친 자기 비판에서 벗어나 자신을 용납하고 싶을 때 읽는 철학",
+    "shortLabel": "자기용납",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "가혹한 자기 비판으로 인해 고통받을 때, 스스로를 용서하고 사랑하며 있는 그대로의 자신을 받아들이는 지혜와 용기를 얻고자 할 때 읽는 철학입니다.",
+    "relatedConcepts": [
+      "자기애",
+      "자기 연민",
+      "자존감",
+      "마음챙김",
+      "자아 실현"
+    ],
+    "exampleQueries": [
+      "스스로를 너무 미워할 때",
+      "자기 비판을 멈추고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 181
+  },
+  {
+    "themeId": "identity_in_new_environment",
+    "name": "새로운 환경에서 정체성을 확립하고 싶을 때 읽는 철학",
+    "shortLabel": "정체성확립",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "익숙한 곳을 떠나 새로운 환경에 처했을 때, 혼란 속에서도 자신의 정체성을 잃지 않고 더욱 견고하게 확립해나가는 방법을 모색하고자 할 때 읽는 철학입니다.",
+    "relatedConcepts": [
+      "자기 정체성",
+      "이주",
+      "적응",
+      "개별화",
+      "사회화"
+    ],
+    "exampleQueries": [
+      "이직 후 새로운 환경에서 나를 찾아갈 때",
+      "낯선 곳에서 나의 존재감을 확립하고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 182
+  },
+  {
+    "themeId": "freedom_from_hatred",
+    "name": "미움과 증오의 감정으로부터 자유로워지고 싶을 때 읽는 철학",
+    "shortLabel": "미움해방",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "타인에 대한 미움이나 증오의 감정에 갇혀 고통받을 때, 그 부정적인 감정에서 벗어나 내면의 평화를 되찾고 긍정적인 관계를 회복하고자 할 때 읽는 철학입니다.",
+    "relatedConcepts": [
+      "용서",
+      "평정심",
+      "감정 조절",
+      "도덕 심리학",
+      "마음의 평화"
+    ],
+    "exampleQueries": [
+      "누군가를 너무 미워하는 마음이 들 때",
+      "증오의 감정에서 벗어나고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 183
+  },
+  {
+    "themeId": "embodying_true_courage",
+    "name": "진정한 용기가 무엇인지 삶에서 실천하고 싶을 때 읽는 철학",
+    "shortLabel": "용기실천",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "막연한 용기가 아닌, 두려움 속에서도 올바른 신념을 가지고 행동하는 진정한 용기의 본질을 이해하고 자신의 삶에서 실천하고자 할 때 읽는 철학입니다.",
+    "relatedConcepts": [
+      "용기",
+      "덕 윤리",
+      "실존주의",
+      "자유 의지",
+      "행동 철학"
+    ],
+    "exampleQueries": [
+      "겁이 많아 망설여질 때 진정한 용기를 갖고 싶을 때",
+      "삶 속에서 용기 있는 사람이 되고 싶어요"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 184
+  },
+  {
+    "themeId": "holding_onto_hope",
+    "name": "희망과 절망 사이에서 삶의 끈을 놓지 않고 싶을 때 읽는 철학",
+    "shortLabel": "희망유지",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "극심한 어려움 속에서 희망을 잃고 절망에 빠지려 할 때, 삶의 긍정적인 측면을 발견하고 다시 일어설 수 있는 내면의 힘과 용기를 얻고자 할 때 읽는 철학입니다.",
+    "relatedConcepts": [
+      "희망의 철학",
+      "회복탄력성",
+      "낙관주의",
+      "실존주의",
+      "고난의 의미"
+    ],
+    "exampleQueries": [
+      "모든 것을 포기하고 싶을 만큼 절망적일 때",
+      "희망을 잃지 않고 버틸 힘을 얻고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 185
+  },
+  {
+    "themeId": "reevaluating_rest_in_achievement_society",
+    "name": "성취 지상주의 사회에서 휴식의 가치를 되새기고 싶을 때 읽는 철학",
+    "shortLabel": "휴식가치",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "끊임없이 성과를 요구하는 현대 사회에서 진정한 휴식의 의미를 잊고 살아갈 때, 삶의 질을 높이는 휴식의 가치와 방법을 성찰하고자 할 때 읽는 철학입니다.",
+    "relatedConcepts": [
+      "놀이의 철학",
+      "삶의 속도",
+      "노동 윤리",
+      "웰빙",
+      "존재론"
+    ],
+    "exampleQueries": [
+      "쉴 틈 없이 일하며 번아웃이 올 때",
+      "휴식이 생산성만큼 중요하다고 느낄 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 186
+  },
+  {
+    "themeId": "wise_judgment_in_information_flood",
+    "name": "정보의 홍수 속에서 현명하게 판단하고 싶을 때 읽는 철학",
+    "shortLabel": "정보판단",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "과도한 정보 속에서 어떤 것이 진실이고 가치 있는 것인지 분별하기 어려울 때, 비판적 사고력을 길러 현명한 판단을 내리고자 할 때 읽는 철학입니다.",
+    "relatedConcepts": [
+      "인식론",
+      "비판적 사고",
+      "정보 윤리",
+      "지식의 가치",
+      "합리성"
+    ],
+    "exampleQueries": [
+      "가짜 뉴스와 진짜 정보를 구별하고 싶을 때",
+      "수많은 정보 속에서 현명한 선택을 해야 할 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 187
+  },
+  {
+    "themeId": "developing_self_control_after_impulse",
+    "name": "충동적인 행동을 후회하고 자제력을 기르고 싶을 때 읽는 철학",
+    "shortLabel": "충동자제",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "순간적인 감정이나 욕구에 이끌려 충동적인 행동을 한 후 후회할 때, 자기 성찰을 통해 자제력을 기르고 더욱 신중한 삶을 살고자 할 때 읽는 철학입니다.",
+    "relatedConcepts": [
+      "의지력",
+      "자기 절제",
+      "쾌락주의",
+      "이성",
+      "감정 조절"
+    ],
+    "exampleQueries": [
+      "홧김에 저지른 행동을 후회할 때",
+      "충동적인 나를 다스리는 지혜를 얻고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 188
+  },
+  {
+    "themeId": "accepting_uncertainty_finding_peace",
+    "name": "삶의 불확실성을 인정하고 평온을 찾고 싶을 때 읽는 철학",
+    "shortLabel": "불확실평온",
+    "group": "생활형",
+    "type": "감정형",
+    "description": "예측할 수 없는 미래와 통제 불가능한 삶의 측면들 앞에서 불안해하기보다, 불확실성을 있는 그대로 받아들이고 마음의 평온을 얻고자 할 때 읽는 철학입니다.",
+    "relatedConcepts": [
+      "운명론",
+      "실존주의",
+      "회복탄력성",
+      "스토아 철학",
+      "마음챙김"
+    ],
+    "exampleQueries": [
+      "인생의 불확실함에 초조해질 때",
+      "미래에 대한 불안을 내려놓고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 189
+  },
+  {
+    "themeId": "exploring_true_friendship_solidarity",
+    "name": "진정한 우정과 연대의 의미를 탐색하고 싶을 때 읽는 철학",
+    "shortLabel": "우정연대",
+    "group": "생활형",
+    "type": "상황형",
+    "description": "단순한 친분을 넘어 서로에게 깊은 영향을 주고받는 진정한 우정의 가치와, 더 넓은 공동체 속에서 연대하는 삶의 의미를 철학적으로 탐구하는 책들입니다.",
+    "relatedConcepts": [
+      "우정의 철학",
+      "공동체",
+      "연대",
+      "관계 윤리",
+      "아리스토텔레스의 우정"
+    ],
+    "exampleQueries": [
+      "진정한 친구란 무엇인지 고민할 때",
+      "세상과 더 깊이 연결되고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 190
+  },
+  {
+    "themeId": "duty_essence",
+    "name": "의무란 무엇인지 묻는 철학",
+    "shortLabel": "의무본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "개인과 사회가 지켜야 할 도리로서의 의무의 본질과 그것이 갖는 의미를 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "의무론",
+      "칸트",
+      "윤리",
+      "책임",
+      "도덕법칙"
+    ],
+    "exampleQueries": [
+      "의무는 왜 지켜야 하는가?",
+      "도덕적 의무란 무엇인가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 101
+  },
+  {
+    "themeId": "courage_essence",
+    "name": "용기란 무엇인지 묻는 철학",
+    "shortLabel": "용기본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "두려움에 맞서는 용기의 본질과 그 의미를 탐색하며, 용기가 개인의 삶과 공동체에 미치는 영향을 고찰하는 철학입니다.",
+    "relatedConcepts": [
+      "덕 윤리",
+      "아리스토텔레스",
+      "니체",
+      "실존주의",
+      "자기극복"
+    ],
+    "exampleQueries": [
+      "용기 있는 삶이란 어떤 삶인가?",
+      "두려움을 극복하는 철학적 방법은?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 102
+  },
+  {
+    "themeId": "history_essence",
+    "name": "역사란 무엇인지 묻는 철학",
+    "shortLabel": "역사본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "과거의 사건들이 어떻게 기록되고 해석되며, 역사가 현재와 미래에 어떤 의미를 갖는지 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "역사철학",
+      "헤겔",
+      "마르크스",
+      "해석학",
+      "서사"
+    ],
+    "exampleQueries": [
+      "역사는 반복되는가?",
+      "역사를 통해 무엇을 배울 수 있는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 103
+  },
+  {
+    "themeId": "god_essence",
+    "name": "신이란 무엇인지 묻는 철학",
+    "shortLabel": "신본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "종교적 신념의 대상으로서 신의 존재론적 의미와 인간과의 관계, 그리고 신의 관념이 문화와 사상에 미치는 영향을 고찰하는 철학입니다.",
+    "relatedConcepts": [
+      "종교철학",
+      "무신론",
+      "유신론",
+      "신학",
+      "형이상학"
+    ],
+    "exampleQueries": [
+      "신은 존재하는가?",
+      "신 없는 세상에서 도덕은 가능한가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 104
+  },
+  {
+    "themeId": "evil_essence",
+    "name": "악의 본질을 묻는 철학",
+    "shortLabel": "악본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "세상에 존재하는 악의 근원과 형태, 그리고 그것이 인간의 윤리적 삶에 미치는 영향을 심층적으로 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "신정론",
+      "도덕철학",
+      "니체",
+      "한나 아렌트",
+      "인간본성"
+    ],
+    "exampleQueries": [
+      "악은 인간의 본성인가?",
+      "절대적 악은 존재하는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 105
+  },
+  {
+    "themeId": "habit_essence",
+    "name": "습관이란 무엇인지 묻는 철학",
+    "shortLabel": "습관본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "인간의 행동과 사고를 형성하는 습관의 메커니즘과 그것이 자유의지 및 개인의 삶에 미치는 영향을 분석하는 철학입니다.",
+    "relatedConcepts": [
+      "행동철학",
+      "실천이성",
+      "습관론",
+      "푸코",
+      "자기계발"
+    ],
+    "exampleQueries": [
+      "습관은 운명을 결정하는가?",
+      "나쁜 습관은 어떻게 철학적으로 극복할까?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 106
+  },
+  {
+    "themeId": "experience_essence",
+    "name": "경험이란 무엇인지 묻는 철학",
+    "shortLabel": "경험본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "감각, 지각, 의식 등 인간이 세계를 인지하고 이해하는 방식으로서 경험의 본질과 인식론적 의미를 고찰하는 철학입니다.",
+    "relatedConcepts": [
+      "경험론",
+      "칸트",
+      "현상학",
+      "인식론",
+      "감각"
+    ],
+    "exampleQueries": [
+      "경험만이 진리를 알려주는가?",
+      "타인의 경험을 이해할 수 있을까?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 107
+  },
+  {
+    "themeId": "memory_essence",
+    "name": "기억의 본질을 묻는 철학",
+    "shortLabel": "기억본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "과거를 보존하고 재생하는 인간의 정신 활동인 기억의 구성 원리와 진실성, 그리고 그것이 개인의 정체성에 미치는 영향을 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "정신철학",
+      "후설",
+      "베르그송",
+      "인지과학",
+      "정체성"
+    ],
+    "exampleQueries": [
+      "기억은 조작될 수 있는가?",
+      "나의 기억은 진실한가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 108
+  },
+  {
+    "themeId": "perception_essence",
+    "name": "지각이란 무엇인지 묻는 철학",
+    "shortLabel": "지각본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "외부 세계를 감각 기관을 통해 인식하는 과정인 지각의 본질과 그 한계를 탐색하며, 지각이 실재와 지식 형성에 미치는 영향을 고찰하는 철학입니다.",
+    "relatedConcepts": [
+      "현상학",
+      "메를로퐁티",
+      "데카르트",
+      "인식론",
+      "감각"
+    ],
+    "exampleQueries": [
+      "우리는 세계를 있는 그대로 지각하는가?",
+      "지각은 어떻게 지식으로 변환되는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 109
+  },
+  {
+    "themeId": "solitude_essence",
+    "name": "고독이란 무엇인지 묻는 철학",
+    "shortLabel": "고독본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "타인과의 단절 속에서 자기 자신과 대면하는 경험인 고독의 존재론적 의미와 인간 실존에 미치는 영향을 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "실존주의",
+      "키르케고르",
+      "사르트르",
+      "하이데거",
+      "소외"
+    ],
+    "exampleQueries": [
+      "고독은 축복인가 저주인가?",
+      "혼자 있는 시간을 어떻게 철학적으로 활용할까?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 110
+  },
+  {
+    "themeId": "desire_essence",
+    "name": "욕망이란 무엇인지 묻는 철학",
+    "shortLabel": "욕망본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "인간의 행동을 추동하는 근원적인 힘으로서 욕망의 본질과 그것이 개인의 삶, 사회 구조, 그리고 도덕에 미치는 영향을 고찰하는 철학입니다.",
+    "relatedConcepts": [
+      "프로이트",
+      "스피노자",
+      "니체",
+      "라캉",
+      "윤리학"
+    ],
+    "exampleQueries": [
+      "인간은 욕망의 노예인가?",
+      "욕망은 어떻게 조절해야 하는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 111
+  },
+  {
+    "themeId": "emotion_essence",
+    "name": "감정이란 무엇인지 묻는 철학",
+    "shortLabel": "감정본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "인간의 내면을 움직이는 희로애락의 감정들이 어떻게 발생하고 어떤 의미를 가지며, 이성이 감정에 미치는 영향을 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "스피노자",
+      "데카르트",
+      "정념",
+      "심리철학",
+      "윤리"
+    ],
+    "exampleQueries": [
+      "감정은 이성적인가?",
+      "감정 때문에 힘든 순간, 철학은 답을 줄까?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 112
+  },
+  {
+    "themeId": "laughter_essence",
+    "name": "웃음이란 무엇인지 묻는 철학",
+    "shortLabel": "웃음본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "인간의 본능적인 표현인 웃음의 사회적 기능과 철학적 의미, 그리고 유머와 풍자가 갖는 인식론적, 윤리적 함의를 고찰하는 철학입니다.",
+    "relatedConcepts": [
+      "베르그송",
+      "유머",
+      "인간본성",
+      "미학",
+      "사회철학"
+    ],
+    "exampleQueries": [
+      "우리는 왜 웃는가?",
+      "웃음은 진실을 드러내는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 113
+  },
+  {
+    "themeId": "play_essence",
+    "name": "놀이란 무엇인지 묻는 철학",
+    "shortLabel": "놀이본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "유희적 활동으로서 놀이의 본질과 그것이 인간의 문화, 예술, 그리고 삶의 의미에 미치는 영향을 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "호이징아",
+      "가다머",
+      "미학",
+      "실존주의",
+      "자유"
+    ],
+    "exampleQueries": [
+      "놀이는 시간 낭비인가?",
+      "놀이를 통해 삶의 의미를 찾을 수 있을까?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 114
+  },
+  {
+    "themeId": "symbol_essence",
+    "name": "상징이란 무엇인지 묻는 철학",
+    "shortLabel": "상징본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "언어, 예술, 종교 등 다양한 영역에서 의미를 전달하는 상징의 구조와 기능, 그리고 상징이 인간의 사고와 문화를 형성하는 방식에 대해 고찰하는 철학입니다.",
+    "relatedConcepts": [
+      "카시러",
+      "기호학",
+      "언어철학",
+      "해석학",
+      "신화"
+    ],
+    "exampleQueries": [
+      "모든 것은 상징인가?",
+      "상징을 통해 우리는 무엇을 아는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 115
+  },
+  {
+    "themeId": "fear_essence",
+    "name": "공포란 무엇인지 묻는 철학",
+    "shortLabel": "공포본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "인간의 가장 근원적인 감정 중 하나인 공포의 본질과 그것이 개인의 행동, 사회적 통제, 그리고 실존적 의미에 미치는 영향을 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "실존주의",
+      "홉스",
+      "칸트",
+      "권력",
+      "불안"
+    ],
+    "exampleQueries": [
+      "공포는 어떻게 인간을 지배하는가?",
+      "공포에 맞서는 철학적 지혜는?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 116
+  },
+  {
+    "themeId": "sacrifice_essence",
+    "name": "희생이란 무엇인지 묻는 철학",
+    "shortLabel": "희생본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "공동체나 타인을 위해 자신을 내어주는 희생의 윤리적 의미와 도덕적 정당성, 그리고 그 한계를 고찰하는 철학입니다.",
+    "relatedConcepts": [
+      "윤리",
+      "공리주의",
+      "의무론",
+      "사랑",
+      "공동체주의"
+    ],
+    "exampleQueries": [
+      "희생은 언제나 옳은가?",
+      "개인의 희생은 사회에 어떤 의미를 갖는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 117
+  },
+  {
+    "themeId": "nature_essence",
+    "name": "자연이란 무엇인지 묻는 철학",
+    "shortLabel": "자연본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "인간을 둘러싼 자연 세계의 존재론적 위상과 인간과의 관계, 그리고 자연이 갖는 윤리적, 미학적 의미를 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "환경철학",
+      "스피노자",
+      "생태주의",
+      "메를로퐁티",
+      "자연법"
+    ],
+    "exampleQueries": [
+      "인간은 자연의 일부인가, 지배자인가?",
+      "훼손된 자연은 회복될 수 있는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 118
+  },
+  {
+    "themeId": "spirit_essence",
+    "name": "정신이란 무엇인지 묻는 철학",
+    "shortLabel": "정신본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "인간을 인간답게 만드는 근원적인 힘으로서 정신의 본질과 그것이 육체, 의식, 그리고 세계와의 관계에서 어떤 의미를 갖는지 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "헤겔",
+      "데카르트",
+      "심신문제",
+      "영혼",
+      "의식"
+    ],
+    "exampleQueries": [
+      "정신은 물질과 분리될 수 있는가?",
+      "인간에게 정신이란 무엇인가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 119
+  },
+  {
+    "themeId": "other_essence",
+    "name": "타인이란 무엇인지 묻는 철학",
+    "shortLabel": "타인본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "나와 다른 존재인 타인의 실존적 의미와 나와의 관계, 그리고 타인과의 만남이 자기 이해와 윤리적 삶에 미치는 영향을 성찰하는 철학입니다.",
+    "relatedConcepts": [
+      "레비나스",
+      "사르트르",
+      "현상학",
+      "간주관성",
+      "윤리"
+    ],
+    "exampleQueries": [
+      "타인의 존재는 나에게 무엇인가?",
+      "타인을 완전히 이해할 수 있을까?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 120
+  },
+  {
+    "themeId": "justice_essence",
+    "name": "정의의 본질과 실현을 묻는 철학",
+    "shortLabel": "정의본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "고대부터 현대까지 다양하게 논의되어 온 정의의 개념과 그것이 개인의 삶과 사회 구조에서 어떻게 실현될 수 있는지 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "롤스",
+      "플라톤",
+      "아리스토텔레스",
+      "공정성",
+      "분배정의"
+    ],
+    "exampleQueries": [
+      "진정한 정의는 무엇인가?",
+      "정의로운 사회는 어떻게 가능한가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 121
+  },
+  {
+    "themeId": "determinism_essence",
+    "name": "결정론이란 무엇인지 묻는 철학",
+    "shortLabel": "결정본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "모든 사건이 미리 정해져 있다는 결정론의 개념과 그것이 인간의 자유의지, 도덕적 책임, 그리고 과학적 인과율과 맺는 관계를 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "자유의지",
+      "인과율",
+      "운명",
+      "과학철학",
+      "스피노자"
+    ],
+    "exampleQueries": [
+      "우리의 행동은 모두 결정되어 있는가?",
+      "결정론 속에서 자유는 가능한가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 122
+  },
+  {
+    "themeId": "responsibility_essence",
+    "name": "책임의 본질을 묻는 철학",
+    "shortLabel": "책임본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "도덕적 행위의 주체로서 인간에게 부과되는 책임의 의미와 범위, 그리고 자유의지와의 관계를 심층적으로 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "자유의지",
+      "윤리학",
+      "칸트",
+      "의무",
+      "인과성"
+    ],
+    "exampleQueries": [
+      "책임은 어디까지인가?",
+      "철학적 관점에서 책임이란 무엇인가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 123
+  },
+  {
+    "themeId": "empathy_essence",
+    "name": "공감이란 무엇인지 묻는 철학",
+    "shortLabel": "공감본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "타인의 감정과 상황을 이해하고 공유하는 공감의 본질과 그것이 윤리적 행동, 사회적 관계 형성에 미치는 영향을 고찰하는 철학입니다.",
+    "relatedConcepts": [
+      "윤리",
+      "타자",
+      "현상학",
+      "간주관성",
+      "도덕심리"
+    ],
+    "exampleQueries": [
+      "공감은 선천적인가 후천적인가?",
+      "공감 능력을 어떻게 키울 수 있을까?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 124
+  },
+  {
+    "themeId": "contingency_essence",
+    "name": "우연이란 무엇인지 묻는 철학",
+    "shortLabel": "우연본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "필연적이지 않은 사건의 발생 방식인 우연의 존재론적 의미와 그것이 인간의 자유의지, 운명, 그리고 세계관에 미치는 영향을 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "필연",
+      "자유의지",
+      "결정론",
+      "확률",
+      "실존주의"
+    ],
+    "exampleQueries": [
+      "우연은 존재하는가, 모든 것은 필연인가?",
+      "우연을 어떻게 받아들여야 하는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 125
+  },
+  {
+    "themeId": "death_essence",
+    "name": "죽음의 의미와 본질을 묻는 철학",
+    "shortLabel": "죽음본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "인간 실존의 궁극적 조건인 죽음의 형이상학적, 윤리적, 실존적 의미를 탐구하며, 삶과 죽음의 관계를 성찰하는 철학입니다.",
+    "relatedConcepts": [
+      "실존주의",
+      "하이데거",
+      "에피쿠로스",
+      "메멘토 모리",
+      "영생"
+    ],
+    "exampleQueries": [
+      "죽음 이후에는 무엇이 오는가?",
+      "죽음을 어떻게 받아들여야 하는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 126
+  },
+  {
+    "themeId": "evolution_essence",
+    "name": "진화란 무엇인지 묻는 철학",
+    "shortLabel": "진화본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "생명체의 변화와 발전을 설명하는 진화론의 철학적 함의와 그것이 인간의 본성, 윤리, 그리고 지식의 한계에 미치는 영향을 고찰하는 철학입니다.",
+    "relatedConcepts": [
+      "다윈",
+      "진화론",
+      "생명철학",
+      "자연선택",
+      "목적론"
+    ],
+    "exampleQueries": [
+      "인간은 진화의 최종 결과물인가?",
+      "진화론은 신의 존재를 부정하는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 127
+  },
+  {
+    "themeId": "civilization_essence",
+    "name": "문명이란 무엇인지 묻는 철학",
+    "shortLabel": "문명본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "인류가 이룩한 사회적, 문화적 성취로서 문명의 기원과 발전 과정, 그리고 그것이 인간의 삶과 자연에 미치는 영향을 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "역사철학",
+      "슈펭글러",
+      "사회계약론",
+      "문화비판",
+      "기술문명"
+    ],
+    "exampleQueries": [
+      "문명은 진보하는가?",
+      "기술 문명은 인류를 행복하게 하는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 128
+  },
+  {
+    "themeId": "self_essence",
+    "name": "자아의 본질을 묻는 철학",
+    "shortLabel": "자아본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "데카르트부터 현대까지 이어져 온 자아의 개념과 그것이 의식, 신체, 타인과의 관계에서 어떤 의미를 가지는지 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "데카르트",
+      "흄",
+      "실존주의",
+      "현상학",
+      "주체성"
+    ],
+    "exampleQueries": [
+      "나란 무엇인가?",
+      "변화하는 자아 속에서 나는 여전히 나인가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 129
+  },
+  {
+    "themeId": "sublime_essence",
+    "name": "숭고미란 무엇인지 묻는 철학",
+    "shortLabel": "숭고미",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "압도적인 자연이나 거대한 예술 작품에서 느끼는 숭고미의 본질과 그것이 미학적 경험, 인간의 한계 인식에 미치는 영향을 고찰하는 철학입니다.",
+    "relatedConcepts": [
+      "칸트",
+      "버크",
+      "미학",
+      "낭만주의",
+      "경외감"
+    ],
+    "exampleQueries": [
+      "아름다움과 숭고미는 어떻게 다른가?",
+      "숭고미는 인간에게 어떤 의미를 주는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 130
+  },
+  {
+    "themeId": "virtue_essence",
+    "name": "덕이란 무엇인지 묻는 철학",
+    "shortLabel": "덕본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "아리스토텔레스 이래로 인간의 훌륭한 품성으로 간주되어 온 덕의 본질과 그것이 올바른 삶의 방식, 행복에 미치는 영향을 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "덕 윤리",
+      "아리스토텔레스",
+      "플라톤",
+      "행복",
+      "선함"
+    ],
+    "exampleQueries": [
+      "덕 있는 삶은 무엇인가?",
+      "현대 사회에서 덕은 여전히 유효한가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 131
+  },
+  {
+    "themeId": "authority_essence",
+    "name": "권위란 무엇인지 묻는 철학",
+    "shortLabel": "권위본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "사회 질서를 유지하고 개인의 복종을 이끌어내는 권위의 정당성과 한계, 그리고 그것이 민주주의와 개인의 자유에 미치는 영향을 고찰하는 철학입니다.",
+    "relatedConcepts": [
+      "푸코",
+      "하버마스",
+      "정치철학",
+      "정당성",
+      "지배"
+    ],
+    "exampleQueries": [
+      "권위는 어디에서 오는가?",
+      "불의한 권위에 저항해야 하는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 132
+  },
+  {
+    "themeId": "future_essence",
+    "name": "미래란 무엇인지 묻는 철학",
+    "shortLabel": "미래본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "아직 오지 않은 시간으로서 미래의 존재론적 의미와 그것이 인간의 계획, 희망, 그리고 불안에 미치는 영향을 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "시간철학",
+      "미래학",
+      "실존주의",
+      "희망",
+      "예측"
+    ],
+    "exampleQueries": [
+      "미래는 정해져 있는가?",
+      "미래를 위해 현재를 희생하는 것이 옳은가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 133
+  },
+  {
+    "themeId": "past_essence",
+    "name": "과거란 무엇인지 묻는 철학",
+    "shortLabel": "과거본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "이미 지나간 시간으로서 과거의 존재론적 위상과 그것이 현재와 미래에 미치는 영향, 그리고 기억과 망각의 관계를 성찰하는 철학입니다.",
+    "relatedConcepts": [
+      "시간철학",
+      "기억",
+      "베르그송",
+      "역사",
+      "향수"
+    ],
+    "exampleQueries": [
+      "과거는 바꿀 수 있는가?",
+      "과거에 얽매이지 않는 삶은 가능한가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 134
+  },
+  {
+    "themeId": "comedy_essence",
+    "name": "희극이란 무엇인지 묻는 철학",
+    "shortLabel": "희극본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "인간의 어리석음이나 모순을 풍자하여 웃음을 유발하는 희극의 본질과 그것이 사회 비판, 인간 이해에 미치는 영향을 고찰하는 철학입니다.",
+    "relatedConcepts": [
+      "미학",
+      "유머",
+      "베르그송",
+      "아리스토텔레스",
+      "비극"
+    ],
+    "exampleQueries": [
+      "희극은 왜 필요한가?",
+      "인생은 희극인가 비극인가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 135
+  },
+  {
+    "themeId": "tragedy_essence",
+    "name": "비극이란 무엇인지 묻는 철학",
+    "shortLabel": "비극본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "인간의 숙명적인 고통과 좌절을 다루는 비극의 본질과 그것이 카타르시스, 인간의 한계 인식에 미치는 영향을 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "아리스토텔레스",
+      "니체",
+      "실존주의",
+      "고통",
+      "운명"
+    ],
+    "exampleQueries": [
+      "인간은 비극적 존재인가?",
+      "비극을 통해 무엇을 얻을 수 있는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 136
+  },
+  {
+    "themeId": "superstition_essence",
+    "name": "미신이란 무엇인지 묻는 철학",
+    "shortLabel": "미신본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "비합리적인 믿음 체계로서 미신의 발생 원인과 사회적 기능, 그리고 그것이 이성적 사고와 과학적 진실에 미치는 영향을 고찰하는 철학입니다.",
+    "relatedConcepts": [
+      "합리주의",
+      "계몽주의",
+      "종교철학",
+      "포퍼",
+      "사이비과학"
+    ],
+    "exampleQueries": [
+      "미신은 왜 사라지지 않는가?",
+      "미신과 종교는 어떻게 다른가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 137
+  },
+  {
+    "themeId": "technology_essence",
+    "name": "기술의 본질과 인간을 묻는 철학",
+    "shortLabel": "기술본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "인간의 삶을 변화시키는 기술의 존재론적 의미와 인간과의 관계, 그리고 기술이 문명과 윤리에 미치는 근원적인 영향을 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "하이데거",
+      "엘륄",
+      "기술철학",
+      "인간본성",
+      "도구"
+    ],
+    "exampleQueries": [
+      "기술은 인간을 자유롭게 하는가 속박하는가?",
+      "기술은 선한가 악한가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 138
+  },
+  {
+    "themeId": "reductionism_essence",
+    "name": "환원론이란 무엇인지 묻는 철학",
+    "shortLabel": "환원론",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "복잡한 현상을 더 단순한 요소로 설명하려는 환원론의 철학적 관점과 그것이 과학, 심리학, 존재론에 미치는 영향을 고찰하는 철학입니다.",
+    "relatedConcepts": [
+      "과학철학",
+      "심신문제",
+      "존재론",
+      "전체론",
+      "분석철학"
+    ],
+    "exampleQueries": [
+      "마음은 뇌 활동으로 환원될 수 있는가?",
+      "모든 것을 환원적으로 설명할 수 있는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 139
+  },
+  {
+    "themeId": "interpretation_essence",
+    "name": "해석이란 무엇인지 묻는 철학",
+    "shortLabel": "해석본질",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "텍스트, 예술, 경험 등 다양한 대상을 이해하는 과정으로서 해석의 본질과 그 한계, 그리고 객관성과 주관성의 문제를 탐구하는 철학입니다.",
+    "relatedConcepts": [
+      "해석학",
+      "가다머",
+      "리쾨르",
+      "언어철학",
+      "문학철학"
+    ],
+    "exampleQueries": [
+      "텍스트는 저자의 의도대로만 해석되어야 하는가?",
+      "모든 이해는 해석인가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 140
+  },
+  {
+    "themeId": "beauty_essence",
+    "name": "아름다움이란 무엇인지 묻는 철학",
+    "shortLabel": "아름다움",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "아름다움의 본질, 경험, 그리고 그것이 인간 삶과 예술에 미치는 영향을 심층적으로 탐구하는 책입니다.",
+    "relatedConcepts": [
+      "미학",
+      "숭고미",
+      "예술론",
+      "감각",
+      "조화"
+    ],
+    "exampleQueries": [
+      "아름다움의 철학적 의미",
+      "예술과 아름다움의 관계"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 141
+  },
+  {
+    "themeId": "freedom_essence",
+    "name": "자유란 무엇인지 묻는 철학",
+    "shortLabel": "자유",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "개인의 선택, 사회적 제약, 그리고 의지의 자유를 둘러싼 근본적인 질문들을 다루며 인간 실존의 핵심을 파고드는 책입니다.",
+    "relatedConcepts": [
+      "자유의지",
+      "결정론",
+      "실존주의",
+      "정치철학",
+      "해방"
+    ],
+    "exampleQueries": [
+      "진정한 자유란 무엇인가",
+      "자유로운 삶을 위한 철학"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 142
+  },
+  {
+    "themeId": "happiness_essence",
+    "name": "행복이란 무엇인지 묻는 철학",
+    "shortLabel": "행복",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "행복의 정의, 그 조건과 실현 방법, 그리고 행복한 삶의 의미를 고대부터 현대까지 다양한 철학적 관점에서 탐색하는 책입니다.",
+    "relatedConcepts": [
+      "쾌락",
+      "에우다이모니아",
+      "삶의 목적",
+      "웰빙",
+      "도덕철학"
+    ],
+    "exampleQueries": [
+      "행복의 철학적 탐구",
+      "어떻게 하면 행복해질까"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 143
+  },
+  {
+    "themeId": "love_essence",
+    "name": "사랑이란 무엇인지 묻는 철학",
+    "shortLabel": "사랑",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "사랑의 다양한 형태, 그 본질적인 의미와 함께 관계, 욕망, 희생 등 사랑을 둘러싼 복합적인 인간 경험을 철학적으로 성찰하는 책입니다.",
+    "relatedConcepts": [
+      "에로스",
+      "아가페",
+      "필리아",
+      "관계론",
+      "윤리"
+    ],
+    "exampleQueries": [
+      "사랑의 본질을 파고드는 철학",
+      "관계 속 사랑의 의미"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 144
+  },
+  {
+    "themeId": "consciousness_essence",
+    "name": "의식이란 무엇인지 묻는 철학",
+    "shortLabel": "의식",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "우리가 세상을 인식하고 경험하는 방식, 주관적인 감각의 본질, 그리고 마음과 육체의 관계에 대한 철학적 질문들을 탐구하는 책입니다.",
+    "relatedConcepts": [
+      "마음철학",
+      "현상학",
+      "인식론",
+      "두뇌",
+      "퀄리아"
+    ],
+    "exampleQueries": [
+      "의식의 기원과 본질",
+      "마음과 의식의 관계"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 145
+  },
+  {
+    "themeId": "reason_essence",
+    "name": "이성이란 무엇인지 묻는 철학",
+    "shortLabel": "이성",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "인간의 사유 능력으로서 이성의 역할과 한계, 그리고 그것이 지식, 도덕, 정치에 미치는 영향을 고찰하는 책입니다.",
+    "relatedConcepts": [
+      "합리주의",
+      "계몽",
+      "논리",
+      "비판",
+      "주체"
+    ],
+    "exampleQueries": [
+      "이성의 본질과 역할",
+      "이성적 판단의 중요성"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 146
+  },
+  {
+    "themeId": "art_essence",
+    "name": "예술이란 무엇인지 묻는 철학",
+    "shortLabel": "예술",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "예술의 정의, 아름다움과의 관계, 창작과 감상의 의미, 그리고 예술이 진실과 사회에 미치는 영향력을 철학적으로 고찰하는 책입니다.",
+    "relatedConcepts": [
+      "미학",
+      "창작",
+      "상징",
+      "모방",
+      "표현"
+    ],
+    "exampleQueries": [
+      "예술 작품의 철학적 의미",
+      "예술의 사회적 역할"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 147
+  },
+  {
+    "themeId": "imagination_essence",
+    "name": "상상력이란 무엇인지 묻는 철학",
+    "shortLabel": "상상력",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "상상력의 본질, 그것이 인식, 창의성, 윤리적 이해에 미치는 영향, 그리고 인간 경험에서 상상력의 역할을 탐구하는 책입니다.",
+    "relatedConcepts": [
+      "환상",
+      "창조성",
+      "인식론",
+      "놀이",
+      "공감"
+    ],
+    "exampleQueries": [
+      "상상력의 철학적 의미",
+      "상상력이 현실에 미치는 영향"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 148
+  },
+  {
+    "themeId": "morality_essence",
+    "name": "도덕이란 무엇인지 묻는 철학",
+    "shortLabel": "도덕",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "도덕적 가치와 규범의 기원, 선악의 판단 기준, 그리고 윤리적 삶의 가능성을 탐색하며 인간 행위의 근본을 성찰하는 책입니다.",
+    "relatedConcepts": [
+      "윤리학",
+      "의무론",
+      "공리주의",
+      "덕 윤리",
+      "가치"
+    ],
+    "exampleQueries": [
+      "도덕적 판단의 근거",
+      "도덕적 행위의 의미"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 149
+  },
+  {
+    "themeId": "instinct_essence",
+    "name": "본능이란 무엇인지 묻는 철학",
+    "shortLabel": "본능",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "인간 행동의 내재적 동기인 본능의 본질, 그것이 이성, 욕망, 사회적 규범과 맺는 관계를 철학적으로 분석하는 책입니다.",
+    "relatedConcepts": [
+      "심리철학",
+      "동물철학",
+      "욕망",
+      "진화",
+      "무의식"
+    ],
+    "exampleQueries": [
+      "인간 본능의 철학적 의미",
+      "본능과 이성 사이의 갈등"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 150
+  },
+  {
+    "themeId": "literature_philosophy",
+    "name": "문학이란 무엇인지 묻는 철학",
+    "shortLabel": "문학",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "문학 작품이 진실, 현실, 인간 경험을 어떻게 담아내는지, 그리고 문학이 철학적 사유와 어떻게 교류하는지를 탐구하는 책입니다.",
+    "relatedConcepts": [
+      "해석학",
+      "서사",
+      "진리",
+      "상상력",
+      "미메시스"
+    ],
+    "exampleQueries": [
+      "문학 속 철학적 사유",
+      "문학과 현실의 관계"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 151
+  },
+  {
+    "themeId": "education_philosophy",
+    "name": "교육이란 무엇인지 묻는 철학",
+    "shortLabel": "교육",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "교육의 목적과 이상, 지식의 전달 방식, 그리고 학습과 성장이 인간의 삶에 미치는 근본적인 의미를 성찰하는 책입니다.",
+    "relatedConcepts": [
+      "교양",
+      "지식론",
+      "인격 형성",
+      "자율",
+      "민주주의"
+    ],
+    "exampleQueries": [
+      "교육의 철학적 의미",
+      "올바른 교육이란 무엇인가"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 152
+  },
+  {
+    "themeId": "hope_essence",
+    "name": "희망이란 무엇인지 묻는 철학",
+    "shortLabel": "희망",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "미래에 대한 긍정적 기대인 희망의 본질, 그것이 인간의 행동, 고통의 극복, 그리고 삶의 의미에 미치는 영향을 탐구하는 책입니다.",
+    "relatedConcepts": [
+      "미래",
+      "용기",
+      "절망",
+      "긍정",
+      "가능성"
+    ],
+    "exampleQueries": [
+      "희망의 철학적 의미",
+      "절망 속에서 희망 찾기"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 153
+  },
+  {
+    "themeId": "forgiveness_essence",
+    "name": "용서란 무엇인지 묻는 철학",
+    "shortLabel": "용서",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "용서의 윤리적, 심리적, 사회적 의미를 탐구하며, 상처와 치유, 책임과 화해의 복잡한 과정을 성찰하는 책입니다.",
+    "relatedConcepts": [
+      "책임",
+      "죄",
+      "화해",
+      "복수",
+      "공감"
+    ],
+    "exampleQueries": [
+      "용서의 철학적 고찰",
+      "용서하는 삶의 의미"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 154
+  },
+  {
+    "themeId": "community_essence",
+    "name": "공동체란 무엇인지 묻는 철학",
+    "shortLabel": "공동체",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "개인과 집단의 관계, 공동체의 형성 원리, 그리고 현대 사회에서 공동체의 역할과 이상적인 형태를 탐색하는 책입니다.",
+    "relatedConcepts": [
+      "사회계약",
+      "정의",
+      "소속감",
+      "연대",
+      "정치철학"
+    ],
+    "exampleQueries": [
+      "이상적인 공동체의 모습",
+      "공동체의 중요성"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 155
+  },
+  {
+    "themeId": "human_essence",
+    "name": "인간이란 무엇인지 묻는 철학",
+    "shortLabel": "인간",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "인간 존재의 본질, 특성, 그리고 한계를 다루며, 자유, 이성, 감정, 육체 등 인간을 구성하는 다양한 요소들을 철학적으로 탐구하는 책입니다.",
+    "relatedConcepts": [
+      "인간학",
+      "실존주의",
+      "정체성",
+      "자아",
+      "본성"
+    ],
+    "exampleQueries": [
+      "인간 존재의 의미",
+      "인간 본성에 대한 철학적 질문"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 156
+  },
+  {
+    "themeId": "body_essence",
+    "name": "몸이란 무엇인지 묻는 철학",
+    "shortLabel": "몸",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "몸과 정신의 관계, 지각과 경험의 근원으로서 몸의 의미, 그리고 몸이 자아와 세계를 구성하는 방식을 현상학적으로 탐구하는 책입니다.",
+    "relatedConcepts": [
+      "현상학",
+      "마음철학",
+      "지각",
+      "신체성",
+      "육체"
+    ],
+    "exampleQueries": [
+      "몸의 철학적 의미",
+      "몸과 정신의 관계 탐구"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 157
+  },
+  {
+    "themeId": "illusion_essence",
+    "name": "환상이란 무엇인지 묻는 철학",
+    "shortLabel": "환상",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "현실과 비현실의 경계, 인간 인식의 불완전성, 그리고 환상이 삶과 문화에 미치는 영향력을 철학적으로 탐구하는 책입니다.",
+    "relatedConcepts": [
+      "실재론",
+      "인식론",
+      "진리",
+      "가상",
+      "꿈"
+    ],
+    "exampleQueries": [
+      "환상이란 무엇인가",
+      "현실과 환상의 경계"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 158
+  },
+  {
+    "themeId": "failure_philosophy",
+    "name": "실패란 무엇인지 묻는 철학",
+    "shortLabel": "실패",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "실패의 본질, 그로부터 배우는 지혜, 그리고 좌절과 재기의 과정에서 인간이 성장하는 의미를 철학적으로 성찰하는 책입니다.",
+    "relatedConcepts": [
+      "고통",
+      "성장",
+      "좌절",
+      "탄력성",
+      "의미"
+    ],
+    "exampleQueries": [
+      "실패의 철학적 가치",
+      "실패를 극복하는 지혜"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 159
+  },
+  {
+    "themeId": "belief_essence",
+    "name": "믿음이란 무엇인지 묻는 철학",
+    "shortLabel": "믿음",
+    "group": "관심사형",
+    "type": "질문형",
+    "description": "믿음의 본질과 근거, 합리적 신념과 비합리적 신념의 차이, 그리고 믿음이 지식, 종교, 사회에 미치는 영향을 탐구하는 책입니다.",
+    "relatedConcepts": [
+      "인식론",
+      "신념",
+      "진리",
+      "합리성",
+      "증거"
+    ],
+    "exampleQueries": [
+      "믿음의 철학적 의미",
+      "합리적인 믿음이란 무엇인가"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 160
+  },
+  {
+    "themeId": "digital_surveillance_and_freedom",
+    "name": "디지털 감시와 자유를 생각하게 하는 철학",
+    "shortLabel": "감시사회",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "현대 사회의 보편적인 디지털 감시 기술이 개인의 자유와 사회에 미치는 영향에 대해 성찰하는 책들입니다.",
+    "relatedConcepts": [
+      "감시",
+      "자유",
+      "프라이버시",
+      "권력",
+      "개인정보"
+    ],
+    "exampleQueries": [
+      "디지털 감시가 우리 삶을 어떻게 바꾸는가?",
+      "자유로운 사회와 감시 기술은 공존할 수 있는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 101
+  },
+  {
+    "themeId": "ai_and_moral_agency",
+    "name": "AI의 도덕적 주체성을 생각하게 하는 철학",
+    "shortLabel": "AI윤리",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "인공지능이 단순한 도구를 넘어 도덕적 판단을 내리고 책임질 수 있는 주체가 될 수 있는지 탐구하는 책들입니다.",
+    "relatedConcepts": [
+      "도덕",
+      "책임",
+      "주체성",
+      "인공지능",
+      "윤리"
+    ],
+    "exampleQueries": [
+      "AI에게 도덕적 책임을 물을 수 있을까?",
+      "인공지능이 도덕적 주체가 될 가능성은?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 102
+  },
+  {
+    "themeId": "blockchain_and_trust",
+    "name": "블록체인과 신뢰의 본질을 생각하게 하는 철학",
+    "shortLabel": "블록체인",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "블록체인 기술이 중앙 집중적 시스템을 벗어나 새로운 형태의 신뢰 기반 사회를 구축할 수 있는지 질문하는 책들입니다.",
+    "relatedConcepts": [
+      "신뢰",
+      "분산화",
+      "투명성",
+      "권위",
+      "탈중앙화"
+    ],
+    "exampleQueries": [
+      "블록체인 기술이 사회적 신뢰를 어떻게 변화시키는가?",
+      "탈중앙화된 신뢰 시스템은 가능한가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 103
+  },
+  {
+    "themeId": "synthetic_media_and_reality",
+    "name": "합성 미디어와 실재의 경계를 생각하게 하는 철학",
+    "shortLabel": "딥페이크",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "딥페이크와 같은 합성 미디어 기술이 진실과 거짓, 현실과 가상의 구분을 모호하게 만드는 현상을 철학적으로 탐구하는 책들입니다.",
+    "relatedConcepts": [
+      "진실",
+      "실재",
+      "가상",
+      "재현",
+      "인식"
+    ],
+    "exampleQueries": [
+      "딥페이크 기술이 현실 인식을 어떻게 왜곡하는가?",
+      "합성 미디어가 만드는 새로운 형태의 진실은 무엇인가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 104
+  },
+  {
+    "themeId": "posthuman_body_and_identity",
+    "name": "포스트휴먼 신체와 정체성을 생각하게 하는 철학",
+    "shortLabel": "포스트신체",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "기술을 통해 변화하는 인간의 신체와 이것이 자아 및 정체성에 미치는 심오한 영향을 탐구하는 책들입니다.",
+    "relatedConcepts": [
+      "신체",
+      "정체성",
+      "포스트휴먼",
+      "변형",
+      "자아"
+    ],
+    "exampleQueries": [
+      "기술로 변형된 신체는 여전히 나인가?",
+      "포스트휴먼 시대에 정체성은 어떻게 정의될까?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 105
+  },
+  {
+    "themeId": "gig_economy_and_human_dignity",
+    "name": "긱 경제와 인간 존엄성을 생각하게 하는 철학",
+    "shortLabel": "긱노동",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "긱 경제로 대표되는 새로운 노동 형태가 인간의 존엄성과 노동의 본질에 어떤 질문을 던지는지 성찰하는 책들입니다.",
+    "relatedConcepts": [
+      "노동",
+      "존엄성",
+      "소외",
+      "불평등",
+      "자본주의"
+    ],
+    "exampleQueries": [
+      "긱 노동은 인간의 존엄성을 훼손하는가?",
+      "미래의 노동은 어떤 가치를 지녀야 할까?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 106
+  },
+  {
+    "themeId": "neurotechnology_and_privacy",
+    "name": "신경 기술과 정신적 사생활을 생각하게 하는 철학",
+    "shortLabel": "뇌프라이버시",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "뇌-컴퓨터 인터페이스(BCI)와 같은 신경 기술이 개인의 생각과 감정까지 침해할 가능성에 대해 고민하는 책들입니다.",
+    "relatedConcepts": [
+      "프라이버시",
+      "자아",
+      "의식",
+      "정신",
+      "윤리"
+    ],
+    "exampleQueries": [
+      "뇌 해킹은 언제쯤 가능해질까?",
+      "생각의 자유와 프라이버시는 어떻게 보호되어야 하는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 107
+  },
+  {
+    "themeId": "algorithm_and_social_justice",
+    "name": "알고리즘과 사회 정의를 생각하게 하는 철학",
+    "shortLabel": "알고정의",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "알고리즘의 의사결정이 사회적 불평등을 심화시키거나 새로운 형태의 정의 문제를 야기하는 현상을 탐구하는 책들입니다.",
+    "relatedConcepts": [
+      "정의",
+      "불평등",
+      "편향",
+      "공정성",
+      "권력"
+    ],
+    "exampleQueries": [
+      "알고리즘이 내리는 판단은 공정한가?",
+      "기술 사회에서 정의는 어떻게 구현될 수 있는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 108
+  },
+  {
+    "themeId": "ecological_crisis_and_anthropocene",
+    "name": "생태 위기와 인류세를 생각하게 하는 철학",
+    "shortLabel": "인류세",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "인류세라는 새로운 지질 시대에 접어들며 인간과 자연의 관계, 그리고 생태 위기 극복을 위한 근본적인 사유를 제공하는 책들입니다.",
+    "relatedConcepts": [
+      "생태",
+      "인류세",
+      "자연",
+      "책임",
+      "환경윤리"
+    ],
+    "exampleQueries": [
+      "인간은 지구의 주인인가?",
+      "기후 위기 시대에 우리는 어떤 존재론적 질문을 던져야 하는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 109
+  },
+  {
+    "themeId": "digital_immortality_and_memory",
+    "name": "디지털 불멸성과 기억의 영속성을 생각하게 하는 철학",
+    "shortLabel": "디지털기억",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "디지털 기술이 인간의 기억을 영구히 저장하고 재현하는 가능성이 존재론적 의미와 삶의 유한성에 미치는 영향을 탐구하는 책들입니다.",
+    "relatedConcepts": [
+      "기억",
+      "불멸성",
+      "존재",
+      "유한성",
+      "영생"
+    ],
+    "exampleQueries": [
+      "디지털 속 나의 기억은 영원히 남을 수 있을까?",
+      "디지털 불멸이 인간의 삶에 어떤 의미를 부여하는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 110
+  },
+  {
+    "themeId": "automation_and_meaning_of_work",
+    "name": "자동화 시대의 노동의 의미를 생각하게 하는 철학",
+    "shortLabel": "노동의미",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "로봇과 인공지능에 의한 자동화가 인간의 노동에서 의미를 박탈할지, 혹은 새로운 의미를 부여할지 성찰하는 책들입니다.",
+    "relatedConcepts": [
+      "노동",
+      "의미",
+      "존재론",
+      "기술",
+      "소외"
+    ],
+    "exampleQueries": [
+      "로봇이 내 일자리를 뺏으면 나는 무엇을 해야 하는가?",
+      "자동화 시대에 인간다운 노동의 가치는 무엇인가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 111
+  },
+  {
+    "themeId": "virtual_reality_and_experience",
+    "name": "가상현실과 경험의 본질을 생각하게 하는 철학",
+    "shortLabel": "가상경험",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "가상현실 기술이 실제 경험과 가상 경험의 경계를 허물면서 인간의 지각과 경험이 무엇인지 근본적으로 질문하는 책들입니다.",
+    "relatedConcepts": [
+      "경험",
+      "지각",
+      "실재",
+      "가상",
+      "의식"
+    ],
+    "exampleQueries": [
+      "가상현실 속 경험은 실제 경험과 같은가?",
+      "나는 어디까지 가상현실에 몰입할 수 있는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 112
+  },
+  {
+    "themeId": "technological_unemployment_and_ubi",
+    "name": "기술 실업과 보편적 기본 소득을 생각하게 하는 철학",
+    "shortLabel": "기본소득",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "자동화로 인한 대규모 기술 실업 가능성 앞에서 보편적 기본 소득이 사회를 지탱할 대안이 될 수 있을지 윤리적, 사회적으로 고민하는 책들입니다.",
+    "relatedConcepts": [
+      "노동",
+      "복지",
+      "정의",
+      "분배",
+      "경제윤리"
+    ],
+    "exampleQueries": [
+      "로봇이 일하면 인간은 놀아도 되는가?",
+      "기술 혁신이 가져올 빈부격차는 어떻게 해소할 수 있을까?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 113
+  },
+  {
+    "themeId": "online_radicalization_and_reason",
+    "name": "온라인 급진화와 이성의 역할을 생각하게 하는 철학",
+    "shortLabel": "온라인급진",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "소셜 미디어를 통해 극단적인 이념이 확산되고 집단적 급진화가 일어나는 현상을 이성과 비판적 사고의 관점에서 분석하는 책들입니다.",
+    "relatedConcepts": [
+      "이성",
+      "비판적사고",
+      "여론",
+      "편향",
+      "민주주의"
+    ],
+    "exampleQueries": [
+      "온라인에서 극단주의가 퍼지는 이유는 무엇인가?",
+      "이성적인 대화는 아직도 가능한가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 114
+  },
+  {
+    "themeId": "ai_and_art_essence",
+    "name": "인공지능과 예술의 본질을 생각하게 하는 철학",
+    "shortLabel": "AI예술",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "인공지능이 만든 예술 작품이 진정한 예술로 인정될 수 있는지, 그리고 예술의 창작 주체는 누구인지 근본적인 질문을 던지는 책들입니다.",
+    "relatedConcepts": [
+      "예술",
+      "창의성",
+      "미학",
+      "주체",
+      "미메시스"
+    ],
+    "exampleQueries": [
+      "AI가 만든 그림은 예술인가?",
+      "예술의 본질은 무엇이며, AI는 이를 바꿀 수 있는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 115
+  },
+  {
+    "themeId": "genetic_engineering_and_human_nature",
+    "name": "유전자 편집과 인간 본성의 변화를 생각하게 하는 철학",
+    "shortLabel": "유전자편집",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "유전자 편집 기술이 인간의 본성 자체를 바꿀 수 있는 가능성을 탐구하며, '인간이란 무엇인가'라는 질문을 다시 던지는 책들입니다.",
+    "relatedConcepts": [
+      "본성",
+      "인간",
+      "윤리",
+      "진화",
+      "목적론"
+    ],
+    "exampleQueries": [
+      "유전자 편집으로 완벽한 인간을 만들 수 있을까?",
+      "인간의 본성은 타고나는 것인가, 만들어지는 것인가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 116
+  },
+  {
+    "themeId": "smart_cities_and_autonomy",
+    "name": "스마트 시티와 개인의 자율성을 생각하게 하는 철학",
+    "shortLabel": "스마트도시",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "스마트 시티의 기술적 효율성이 개인의 자유와 자율성을 어떻게 침해할 수 있는지, 혹은 증진시킬 수 있는지 탐색하는 책들입니다.",
+    "relatedConcepts": [
+      "자율성",
+      "도시",
+      "감시",
+      "효율성",
+      "통제"
+    ],
+    "exampleQueries": [
+      "스마트 시티에서 개인의 자유는 어떻게 보호될까?",
+      "기술이 완벽하게 통제하는 도시에서 나는 자유로운가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 117
+  },
+  {
+    "themeId": "disinformation_and_epistemic_crisis",
+    "name": "가짜 정보와 인식론적 위기를 생각하게 하는 철학",
+    "shortLabel": "인식위기",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "정보의 홍수 속에서 진실을 분별하기 어려워지며 발생하는 인식론적 혼란과 위기 현상을 심층적으로 다루는 책들입니다.",
+    "relatedConcepts": [
+      "진실",
+      "지식",
+      "인식",
+      "불확실성",
+      "회의주의"
+    ],
+    "exampleQueries": [
+      "무엇이 진실인지 알 수 없는 시대, 어떻게 살아야 하는가?",
+      "정보 과부하가 이성적 판단을 방해하는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 118
+  },
+  {
+    "themeId": "technology_and_time_perception",
+    "name": "기술 변화와 시간 지각의 변동을 생각하게 하는 철학",
+    "shortLabel": "시간지각",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "디지털 기술의 가속화가 인간의 시간 경험과 지각에 어떤 영향을 미치며, 현대인의 삶의 속도와 의미를 어떻게 변화시키는지 탐구하는 책들입니다.",
+    "relatedConcepts": [
+      "시간",
+      "지각",
+      "속도",
+      "경험",
+      "현대성"
+    ],
+    "exampleQueries": [
+      "스마트폰 시대, 시간은 왜 더 빠르게 느껴질까?",
+      "기술이 우리의 시간 감각을 어떻게 바꾸었는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 119
+  },
+  {
+    "themeId": "online_identity_and_authenticity",
+    "name": "온라인 정체성과 진정성을 생각하게 하는 철학",
+    "shortLabel": "온라인자아",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "온라인 플랫폼에서 형성되는 다양한 자아와 정체성이 현실 속 '나'의 진정성과 어떻게 연결되거나 단절되는지 탐구하는 책들입니다.",
+    "relatedConcepts": [
+      "정체성",
+      "자아",
+      "진정성",
+      "가면",
+      "관계"
+    ],
+    "exampleQueries": [
+      "인스타그램 속 나는 진짜 나일까?",
+      "온라인과 오프라인의 나는 어떻게 다른가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 120
+  },
+  {
+    "themeId": "data_ethics_and_human_rights",
+    "name": "데이터 윤리와 인권의 미래를 생각하게 하는 철학",
+    "shortLabel": "데이터인권",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "빅데이터 시대에 개인의 데이터가 어떻게 수집, 분석, 활용되며, 이것이 기본적 인권과 디지털 권리에 어떤 새로운 과제를 던지는지 논하는 책들입니다.",
+    "relatedConcepts": [
+      "인권",
+      "윤리",
+      "데이터",
+      "권리",
+      "정의"
+    ],
+    "exampleQueries": [
+      "내 데이터는 누가 소유해야 하는가?",
+      "데이터가 인간의 존엄성을 침해할 수 있는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 121
+  },
+  {
+    "themeId": "superintelligence_and_humanity",
+    "name": "초지능과 인류의 공존을 생각하게 하는 철학",
+    "shortLabel": "초지능",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "인간의 지능을 뛰어넘는 초지능 AI의 등장이 인류의 미래와 존재론적 지위에 어떤 근본적인 변화를 가져올지 예측하고 성찰하는 책들입니다.",
+    "relatedConcepts": [
+      "초지능",
+      "인류",
+      "존재론",
+      "위험",
+      "공존"
+    ],
+    "exampleQueries": [
+      "초지능 AI가 인류를 지배할 가능성은?",
+      "인류는 초지능과 어떻게 함께 살아가야 하는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 122
+  },
+  {
+    "themeId": "attention_economy_and_mindfulness",
+    "name": "관심 경제와 마음의 평화를 생각하게 하는 철학",
+    "shortLabel": "관심경제",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "현대 사회의 '관심 경제'가 우리의 집중력과 정신 건강에 미치는 영향을 분석하고, 기술 속에서 마음의 평화를 찾는 방법을 모색하는 책들입니다.",
+    "relatedConcepts": [
+      "집중력",
+      "마음",
+      "자본주의",
+      "소진",
+      "웰빙"
+    ],
+    "exampleQueries": [
+      "스마트폰이 나의 집중력을 훔쳐가는가?",
+      "정보 과부하 속에서 어떻게 평온을 유지할 수 있을까?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 123
+  },
+  {
+    "themeId": "neurodiversity_and_social_inclusion",
+    "name": "신경다양성과 사회적 포용을 생각하게 하는 철학",
+    "shortLabel": "신경다양성",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "자폐 스펙트럼 등 다양한 신경학적 특성을 가진 사람들을 사회의 '다름'으로 인정하고 포용하는 철학적, 윤리적 관점을 제시하는 책들입니다.",
+    "relatedConcepts": [
+      "다양성",
+      "포용",
+      "다름",
+      "윤리",
+      "정체성"
+    ],
+    "exampleQueries": [
+      "신경다양성 관점에서 사회적 약자는 누구인가?",
+      "개인의 '다름'을 어떻게 이해하고 존중해야 하는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 124
+  },
+  {
+    "themeId": "biotechnology_and_death",
+    "name": "생명 공학과 죽음의 의미를 생각하게 하는 철학",
+    "shortLabel": "생명과죽음",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "생명 연장, 냉동 보존 등 생명 공학 기술이 죽음의 개념과 인간의 유한성에 대한 기존 관념을 어떻게 재정의하는지 탐구하는 책들입니다.",
+    "relatedConcepts": [
+      "죽음",
+      "생명",
+      "유한성",
+      "영생",
+      "존재론"
+    ],
+    "exampleQueries": [
+      "과학으로 죽음을 극복할 수 있을까?",
+      "죽지 않는 세상은 과연 행복할까?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 125
+  },
+  {
+    "themeId": "ai_and_emotional_labor",
+    "name": "AI 시대의 감정 노동과 인간성을 생각하게 하는 철학",
+    "shortLabel": "감정노동",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "인공지능이 감정 인식 및 생성 기능을 갖추면서 감정 노동의 본질과 인간의 감정적 교류가 갖는 의미를 재조명하는 책들입니다.",
+    "relatedConcepts": [
+      "감정",
+      "노동",
+      "인간성",
+      "소외",
+      "관계"
+    ],
+    "exampleQueries": [
+      "AI 상담사에게 위로받는 것이 진정한 위로일까?",
+      "감정 노동의 가치는 무엇인가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 126
+  },
+  {
+    "themeId": "digital_colonization_and_sovereignty",
+    "name": "디지털 식민주의와 주권의 문제를 생각하게 하는 철학",
+    "shortLabel": "디지털주권",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "거대 기술 기업의 플랫폼이 전 세계인의 삶을 지배하면서 발생하는 디지털 주권의 침해와 새로운 형태의 식민주의를 비판적으로 성찰하는 책들입니다.",
+    "relatedConcepts": [
+      "주권",
+      "권력",
+      "식민주의",
+      "제국주의",
+      "데이터"
+    ],
+    "exampleQueries": [
+      "글로벌 플랫폼은 디지털 식민주의를 만드는가?",
+      "국가의 디지털 주권은 어떻게 지킬 수 있는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 127
+  },
+  {
+    "themeId": "post_truth_and_critical_thinking",
+    "name": "포스트 트루스 시대의 비판적 사고를 생각하게 하는 철학",
+    "shortLabel": "비판적사고",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "진실이 객관적인 사실보다 감정과 신념에 의해 좌우되는 포스트 트루스 시대에, 비판적 사고의 중요성과 그 역할을 강조하는 책들입니다.",
+    "relatedConcepts": [
+      "진실",
+      "비판적사고",
+      "이성",
+      "여론",
+      "인식"
+    ],
+    "exampleQueries": [
+      "무엇을 믿어야 할지 혼란스러울 때 어떻게 판단해야 하는가?",
+      "포스트 트루스 시대에 지식인의 역할은 무엇인가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 128
+  },
+  {
+    "themeId": "sharing_economy_and_community",
+    "name": "공유 경제와 공동체의 미래를 생각하게 하는 철학",
+    "shortLabel": "공유경제",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "차량 공유, 숙박 공유 등 공유 경제 모델이 개인의 소유 개념과 전통적인 공동체 관계에 어떤 변화를 가져오는지 탐구하는 책들입니다.",
+    "relatedConcepts": [
+      "공유",
+      "공동체",
+      "소유",
+      "관계",
+      "자본주의"
+    ],
+    "exampleQueries": [
+      "공유 경제가 진정한 공동체를 만들 수 있을까?",
+      "우리는 무엇을 소유하고 무엇을 공유해야 하는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 129
+  },
+  {
+    "themeId": "metaverse_ethics_and_governance",
+    "name": "메타버스 윤리와 거버넌스를 생각하게 하는 철학",
+    "shortLabel": "메타윤리",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "가상 세계인 메타버스에서 발생하는 새로운 윤리적 딜레마와 사회적 규범, 거버넌스 모델에 대해 심층적으로 논의하는 책들입니다.",
+    "relatedConcepts": [
+      "윤리",
+      "거버넌스",
+      "규범",
+      "가상세계",
+      "법"
+    ],
+    "exampleQueries": [
+      "메타버스에서 일어난 범죄는 누가 처벌하는가?",
+      "가상 세계에도 현실과 같은 윤리적 기준이 필요한가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 130
+  },
+  {
+    "themeId": "bioethics_and_human_dignity",
+    "name": "생명윤리와 인간 존엄성의 가치를 생각하게 하는 철학",
+    "shortLabel": "생명존엄",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "유전자 치료, 장기 이식 등 생명 공학 기술의 발전이 인간 생명의 존엄성과 가치에 대해 어떤 근본적인 질문을 던지는지 탐구하는 책들입니다.",
+    "relatedConcepts": [
+      "존엄성",
+      "생명",
+      "윤리",
+      "가치",
+      "인권"
+    ],
+    "exampleQueries": [
+      "인간의 생명은 어디까지 조작될 수 있는가?",
+      "생명 연장이 인간 존엄성을 해칠 수도 있는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 131
+  },
+  {
+    "themeId": "technology_and_solitude",
+    "name": "기술 사회의 고독과 연대를 생각하게 하는 철학",
+    "shortLabel": "고독과연대",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "초연결 사회 속에서 오히려 더 심화되는 개인의 고독과 소외감을 극복하고 새로운 형태의 연대를 모색하는 철학적 해법을 제시하는 책들입니다.",
+    "relatedConcepts": [
+      "고독",
+      "소외",
+      "연대",
+      "관계",
+      "공동체"
+    ],
+    "exampleQueries": [
+      "모두가 연결된 세상에서 왜 더 외로운가?",
+      "디지털 사회에서 진정한 연대는 어떻게 가능한가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 132
+  },
+  {
+    "themeId": "ai_and_human_language",
+    "name": "인공지능과 인간 언어의 관계를 생각하게 하는 철학",
+    "shortLabel": "AI언어",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "인공지능이 인간의 언어를 이해하고 생성하는 능력이 인간 언어의 본질과 사고 방식에 어떤 철학적 질문을 던지는지 탐구하는 책들입니다.",
+    "relatedConcepts": [
+      "언어",
+      "사고",
+      "의사소통",
+      "인공지능",
+      "의미"
+    ],
+    "exampleQueries": [
+      "AI는 인간의 언어를 정말로 이해하는가?",
+      "인간과 AI의 대화는 어떤 의미를 가질까?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 133
+  },
+  {
+    "themeId": "post_capitalism_and_technology",
+    "name": "기술 발전 이후의 자본주의를 생각하게 하는 철학",
+    "shortLabel": "탈자본주의",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "기술 혁명이 자본주의 체제에 미치는 영향과 함께, 기술을 통한 새로운 경제 시스템 또는 탈자본주의 사회의 가능성을 모색하는 책들입니다.",
+    "relatedConcepts": [
+      "자본주의",
+      "기술",
+      "경제",
+      "사회주의",
+      "유토피아"
+    ],
+    "exampleQueries": [
+      "기술은 자본주의를 어떻게 변화시킬까?",
+      "기술이 만드는 새로운 경제 시스템은 무엇인가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 134
+  },
+  {
+    "themeId": "critical_theory_and_technology",
+    "name": "비판 이론으로 기술 사회를 성찰하게 하는 철학",
+    "shortLabel": "기술비판",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "프랑크푸르트 학파 등 비판 이론의 관점에서 현대 기술 문명이 가진 지배와 억압의 메커니즘을 분석하고 대안을 모색하는 책들입니다.",
+    "relatedConcepts": [
+      "비판이론",
+      "기술",
+      "권력",
+      "지배",
+      "해방"
+    ],
+    "exampleQueries": [
+      "기술은 인간을 자유롭게 하는가, 억압하는가?",
+      "기술 사회의 숨겨진 권력 구조를 어떻게 이해해야 할까?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 135
+  },
+  {
+    "themeId": "digital_nomadism_and_belonging",
+    "name": "디지털 노마디즘과 소속감을 생각하게 하는 철학",
+    "shortLabel": "디지털노마드",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "디지털 노마드라는 새로운 생활 양식이 공간, 소속감, 정체성, 그리고 삶의 의미에 대해 어떤 철학적 질문을 던지는지 탐구하는 책들입니다.",
+    "relatedConcepts": [
+      "소속감",
+      "정체성",
+      "공간",
+      "유목민",
+      "자유"
+    ],
+    "exampleQueries": [
+      "어디에도 정착하지 않는 삶은 행복한가?",
+      "디지털 노마드는 현대인의 어떤 욕망을 반영하는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 136
+  },
+  {
+    "themeId": "data_driven_society_and_destiny",
+    "name": "데이터 사회와 결정론적 운명을 생각하게 하는 철학",
+    "shortLabel": "데이터운명",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "빅데이터 분석이 개인의 미래를 예측하고 통제하려 하는 경향이 인간의 자유의지와 운명론적 사고에 어떤 영향을 미치는지 성찰하는 책들입니다.",
+    "relatedConcepts": [
+      "운명",
+      "결정론",
+      "자유의지",
+      "데이터",
+      "예측"
+    ],
+    "exampleQueries": [
+      "빅데이터는 내 미래를 이미 알고 있는가?",
+      "데이터가 예측하는 미래에 나는 저항할 수 있는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 137
+  },
+  {
+    "themeId": "transhumanism_and_ethics",
+    "name": "트랜스휴머니즘과 윤리적 과제를 생각하게 하는 철학",
+    "shortLabel": "트랜스윤리",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "기술을 통해 인간의 신체적, 정신적 한계를 초월하려는 트랜스휴머니즘의 목표가 가져올 윤리적, 사회적 문제들을 심도 있게 다루는 책들입니다.",
+    "relatedConcepts": [
+      "트랜스휴머니즘",
+      "윤리",
+      "한계",
+      "증강",
+      "인간개조"
+    ],
+    "exampleQueries": [
+      "인간은 어디까지 자신을 개조할 수 있는가?",
+      "트랜스휴머니즘은 인류에게 어떤 미래를 가져올까?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 138
+  },
+  {
+    "themeId": "social_media_and_happiness",
+    "name": "소셜 미디어와 행복의 역설을 생각하게 하는 철학",
+    "shortLabel": "소셜행복",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "소셜 미디어가 제공하는 연결성과 소통의 기회에도 불구하고 오히려 현대인의 행복감을 저해하는 역설적 현상을 철학적으로 분석하는 책들입니다.",
+    "relatedConcepts": [
+      "행복",
+      "소셜미디어",
+      "비교",
+      "자기애",
+      "관계"
+    ],
+    "exampleQueries": [
+      "소셜 미디어가 정말 우리를 행복하게 하는가?",
+      "왜 타인의 행복이 나를 불행하게 만드는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 139
+  },
+  {
+    "themeId": "eco_spirituality_and_technology",
+    "name": "생태 영성과 기술 시대의 관계를 생각하게 하는 철학",
+    "shortLabel": "생태영성",
+    "group": "사회·기술형",
+    "type": "주제형",
+    "description": "과학 기술 시대에 인간과 자연의 관계를 넘어선 영적 연결과 생태적 감수성을 회복하려는 '생태 영성'의 의미를 탐구하는 책들입니다.",
+    "relatedConcepts": [
+      "생태",
+      "영성",
+      "자연",
+      "기술",
+      "관계"
+    ],
+    "exampleQueries": [
+      "기술만으로 환경 위기를 해결할 수 있을까?",
+      "현대인에게 필요한 새로운 형태의 영성은 무엇인가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 140
+  },
+  {
+    "themeId": "what_is_philosophy_intro",
+    "name": "철학이란 무엇인지 묻게 하는 철학",
+    "shortLabel": "철학입문",
+    "group": "입문·출발형",
+    "type": "철학 주제 탐구형",
+    "description": "철학의 기원과 주요 질문, 그리고 철학적 사고의 본질을 소개하며 철학적 탐구의 첫걸음을 떼게 합니다.",
+    "relatedConcepts": [
+      "사유",
+      "지혜",
+      "근본 질문",
+      "세계관",
+      "인식론"
+    ],
+    "exampleQueries": [
+      "철학은 왜 배워야 하나요?",
+      "철학의 기본적인 질문은 무엇인가요?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 101
+  },
+  {
+    "themeId": "socrates_socratic_method",
+    "name": "소크라테스의 문답으로 진리를 탐구하는 철학",
+    "shortLabel": "소크라테스",
+    "group": "입문·출발형",
+    "type": "철학자/사상 출발형",
+    "description": "질문과 대화를 통해 스스로 답을 찾아가도록 이끄는 소크라테스의 철학적 방법론을 쉽게 소개합니다.",
+    "relatedConcepts": [
+      "산파술",
+      "무지의 지",
+      "덕",
+      "성찰",
+      "대화"
+    ],
+    "exampleQueries": [
+      "소크라테스 철학 입문서 추천",
+      "소크라테스처럼 질문하는 법"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 102
+  },
+  {
+    "themeId": "plato_theory_of_forms",
+    "name": "플라톤의 이데아 세계를 탐험하는 철학",
+    "shortLabel": "플라톤",
+    "group": "입문·출발형",
+    "type": "철학자/사상 출발형",
+    "description": "보이는 세계 너머에 존재하는 진정한 실재, 플라톤의 이데아론을 통해 세계를 이해하는 새로운 관점을 제시합니다.",
+    "relatedConcepts": [
+      "이데아",
+      "동굴의 비유",
+      "영혼",
+      "국가론",
+      "진리"
+    ],
+    "exampleQueries": [
+      "플라톤의 이데아론 쉽게 이해하기",
+      "플라톤 철학 처음 읽기"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 103
+  },
+  {
+    "themeId": "aristotle_practical_wisdom",
+    "name": "아리스토텔레스에게서 배우는 삶의 지혜와 덕",
+    "shortLabel": "아리스토텔",
+    "group": "입문·출발형",
+    "type": "철학자/사상 출발형",
+    "description": "행복한 삶을 위한 덕과 중용의 의미를 아리스토텔레스의 윤리학을 통해 탐구하며, 실천적 지혜를 기르게 합니다.",
+    "relatedConcepts": [
+      "중용",
+      "행복(에우다이모니아)",
+      "덕",
+      "목적론",
+      "실천적 지혜"
+    ],
+    "exampleQueries": [
+      "아리스토텔레스 윤리학 입문",
+      "어떻게 살아야 잘 사는 건가요?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 104
+  },
+  {
+    "themeId": "descartes_doubt_and_mind",
+    "name": "데카르트의 의심에서 시작하는 나 존재의 철학",
+    "shortLabel": "데카르트",
+    "group": "입문·출발형",
+    "type": "철학자/사상 출발형",
+    "description": "'나는 생각한다, 고로 존재한다'는 유명한 명제를 통해 자신의 존재와 세계의 실재를 탐구하는 데카르트의 사유를 소개합니다.",
+    "relatedConcepts": [
+      "회의론",
+      "코기토",
+      "심신이원론",
+      "합리론",
+      "자아"
+    ],
+    "exampleQueries": [
+      "데카르트 철학 입문",
+      "나는 왜 존재하는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 105
+  },
+  {
+    "themeId": "british_empiricism_intro",
+    "name": "경험을 통해 지식을 쌓는 영국 경험론 철학",
+    "shortLabel": "경험론",
+    "group": "입문·출발형",
+    "type": "철학 주제 탐구형",
+    "description": "인간의 모든 지식이 경험에서 비롯된다는 존 로크, 데이비드 흄 등의 영국 경험론 사상을 통해 인식의 한계와 가능성을 탐구합니다.",
+    "relatedConcepts": [
+      "경험",
+      "감각",
+      "관념",
+      "백지설",
+      "귀납"
+    ],
+    "exampleQueries": [
+      "영국 경험론 쉽게 알기",
+      "지식은 어디서 오는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 106
+  },
+  {
+    "themeId": "kant_duty_and_morality",
+    "name": "칸트에게서 배우는 의무와 도덕의 철학",
+    "shortLabel": "칸트윤리",
+    "group": "입문·출발형",
+    "type": "철학자/사상 출발형",
+    "description": "보편적인 도덕 법칙과 인간의 존엄성을 강조한 칸트의 윤리 사상을 통해 올바른 행위와 의무의 의미를 깊이 있게 성찰하게 합니다.",
+    "relatedConcepts": [
+      "정언명령",
+      "자율",
+      "선의지",
+      "존엄성",
+      "이성"
+    ],
+    "exampleQueries": [
+      "칸트 윤리학 처음 접하기",
+      "도덕적인 삶이란 무엇인가요?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 107
+  },
+  {
+    "themeId": "introduction_to_existentialism",
+    "name": "나의 존재 의미를 묻는 실존주의 철학",
+    "shortLabel": "실존주의",
+    "group": "입문·출발형",
+    "type": "철학 주제 탐구형",
+    "description": "사르트르, 카뮈 등 실존주의 철학자들의 사상을 통해 인간의 자유, 책임, 부조리 속에서 삶의 의미를 스스로 찾아가는 여정을 시작합니다.",
+    "relatedConcepts": [
+      "자유",
+      "책임",
+      "부조리",
+      "본질",
+      "선택"
+    ],
+    "exampleQueries": [
+      "실존주의 철학이란 무엇인가요?",
+      "삶의 의미를 찾고 싶을 때"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 108
+  },
+  {
+    "themeId": "introduction_to_utilitarianism",
+    "name": "최대 다수의 최대 행복을 추구하는 공리주의 철학",
+    "shortLabel": "공리주의",
+    "group": "입문·출발형",
+    "type": "철학 주제 탐구형",
+    "description": "벤담과 밀로 대표되는 공리주의 사상을 통해 사회 전체의 행복과 이익을 증진하는 윤리적 판단 기준을 탐구합니다.",
+    "relatedConcepts": [
+      "행복",
+      "효용",
+      "결과론",
+      "도덕 계산",
+      "사회 정의"
+    ],
+    "exampleQueries": [
+      "공리주의 윤리 사상 입문",
+      "어떤 선택이 더 나은 결과를 가져올까요?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 109
+  },
+  {
+    "themeId": "stoicism_for_daily_life",
+    "name": "흔들림 없는 평온을 찾는 스토아 철학",
+    "shortLabel": "스토아",
+    "group": "입문·출발형",
+    "type": "철학 주제 탐구형",
+    "description": "세네카, 에픽테토스 등의 스토아 철학자들의 가르침을 통해 감정을 다스리고, 고난 속에서도 평정을 유지하는 지혜를 배웁니다.",
+    "relatedConcepts": [
+      "이성",
+      "덕",
+      "아파테이아",
+      "자연에 따르는 삶",
+      "내면의 평온"
+    ],
+    "exampleQueries": [
+      "스토아 철학 입문서",
+      "스트레스와 불안을 다스리는 법"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 110
+  },
+  {
+    "themeId": "nietzsche_revaluation_of_values",
+    "name": "니체에게서 배우는 가치 재평가와 초인(超人)의 철학",
+    "shortLabel": "니체",
+    "group": "입문·출발형",
+    "type": "철학자/사상 출발형",
+    "description": "기존 가치를 비판하고 삶을 긍정하며 스스로의 가치를 창조하는 니체의 사상을 통해 삶의 의미를 주체적으로 탐색하게 합니다.",
+    "relatedConcepts": [
+      "초인",
+      "힘에의 의지",
+      "영원 회귀",
+      "노예 도덕",
+      "가치 재평가"
+    ],
+    "exampleQueries": [
+      "니체 철학 처음 읽기",
+      "나만의 가치를 만들고 싶어요"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 111
+  },
+  {
+    "themeId": "marx_social_criticism",
+    "name": "마르크스의 시선으로 사회 불평등을 보는 철학",
+    "shortLabel": "마르크스",
+    "group": "입문·출발형",
+    "type": "철학자/사상 출발형",
+    "description": "자본주의 사회의 구조적 모순과 계급 갈등을 분석한 마르크스의 사상을 통해 불평등한 현실을 비판적으로 이해하게 합니다.",
+    "relatedConcepts": [
+      "계급투쟁",
+      "자본주의",
+      "소외",
+      "사회 변혁",
+      "유물론"
+    ],
+    "exampleQueries": [
+      "마르크스 사상 입문",
+      "사회 불평등의 원인이 궁금해요"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 112
+  },
+  {
+    "themeId": "confucianism_humanity_and_harmony",
+    "name": "공자에게서 배우는 인간다운 삶과 조화의 철학",
+    "shortLabel": "공자",
+    "group": "입문·출발형",
+    "type": "철학자/사상 출발형",
+    "description": "인(仁)과 예(禮)를 바탕으로 한 공자의 유가 사상을 통해 인간관계의 지혜와 사회적 조화의 중요성을 깨닫게 합니다.",
+    "relatedConcepts": [
+      "인(仁)",
+      "예(禮)",
+      "군자",
+      "효(孝)",
+      "덕치"
+    ],
+    "exampleQueries": [
+      "공자 철학 입문",
+      "사람들과 잘 지내는 법을 배우고 싶어요"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 113
+  },
+  {
+    "themeId": "taoism_nature_and_non_action",
+    "name": "노자와 장자에게서 배우는 자연과 무위의 철학",
+    "shortLabel": "도교",
+    "group": "입문·출발형",
+    "type": "철학자/사상 출발형",
+    "description": "자연의 순리에 따르고 무위(無爲)의 삶을 강조한 노자와 장자의 도가 사상을 통해 복잡한 세상 속에서 마음의 평화를 얻는 방법을 탐색합니다.",
+    "relatedConcepts": [
+      "도(道)",
+      "무위자연",
+      "상대주의",
+      "탈속",
+      "허무"
+    ],
+    "exampleQueries": [
+      "노자 도덕경 쉽게 읽기",
+      "자연과 하나 되는 삶의 지혜"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 114
+  },
+  {
+    "themeId": "introduction_to_feminist_philosophy",
+    "name": "성차별과 불평등을 넘어 새로운 관계를 모색하는 페미니즘 철학",
+    "shortLabel": "페미니즘",
+    "group": "입문·출발형",
+    "type": "철학 주제 탐구형",
+    "description": "여성의 경험을 중심으로 사회적 성(gender)과 권력의 문제를 탐구하며, 보다 평등하고 정의로운 사회를 위한 철학적 사유를 시작하게 합니다.",
+    "relatedConcepts": [
+      "젠더",
+      "가부장제",
+      "차이",
+      "억압",
+      "해방"
+    ],
+    "exampleQueries": [
+      "페미니즘 철학 입문",
+      "성 평등에 대한 철학적 시각"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 115
+  },
+  {
+    "themeId": "introduction_to_postmodernism",
+    "name": "절대적 진실을 의심하는 포스트모더니즘 철학",
+    "shortLabel": "포스트모던",
+    "group": "입문·출발형",
+    "type": "철학 주제 탐구형",
+    "description": "근대적 이념과 거대 서사를 해체하며 다원성과 상대성을 강조하는 푸코, 데리다 등의 포스트모더니즘 사상을 통해 현대 사회를 이해하는 새로운 틀을 제공합니다.",
+    "relatedConcepts": [
+      "탈구조주의",
+      "해체",
+      "서사",
+      "권력",
+      "지식"
+    ],
+    "exampleQueries": [
+      "포스트모더니즘 쉽게 설명해주세요",
+      "현대 사회는 왜 이렇게 복잡한가요?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 116
+  },
+  {
+    "themeId": "introduction_to_phenomenology",
+    "name": "현상학으로 경험하는 세계와 의식의 본질",
+    "shortLabel": "현상학",
+    "group": "입문·출발형",
+    "type": "철학 주제 탐구형",
+    "description": "후설, 하이데거 등의 현상학 사상을 통해 우리가 직접 경험하는 현상 그 자체에 집중하여 의식과 세계의 관계를 탐구하는 방법을 배웁니다.",
+    "relatedConcepts": [
+      "현상",
+      "지향성",
+      "에포케",
+      "생활 세계",
+      "존재"
+    ],
+    "exampleQueries": [
+      "현상학 철학 입문",
+      "세계를 어떻게 인식하는가?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 117
+  },
+  {
+    "themeId": "basic_philosophy_of_science",
+    "name": "과학적 지식의 타당성을 묻는 과학철학 입문",
+    "shortLabel": "과학철학",
+    "group": "입문·출발형",
+    "type": "철학 주제 탐구형",
+    "description": "과학이 어떻게 진리를 탐구하고 지식을 발전시키는지, 과학적 방법론과 그 한계를 철학적으로 고찰하며 과학적 사고력을 기르게 합니다.",
+    "relatedConcepts": [
+      "반증가능성",
+      "패러다임",
+      "과학혁명",
+      "경험주의",
+      "객관성"
+    ],
+    "exampleQueries": [
+      "과학철학이란 무엇인가요?",
+      "과학은 정말 진실만을 말할까요?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 118
+  },
+  {
+    "themeId": "introduction_to_critical_theory",
+    "name": "사회의 불합리한 구조를 비판하는 비판 이론 철학",
+    "shortLabel": "비판이론",
+    "group": "입문·출발형",
+    "type": "철학 주제 탐구형",
+    "description": "프랑크푸르트 학파의 비판 이론을 통해 현대 사회의 문화, 미디어, 권력 관계 속에 숨겨진 지배 이데올로기를 분석하고 성찰하는 방법을 제시합니다.",
+    "relatedConcepts": [
+      "이데올로기",
+      "합리성",
+      "문화 산업",
+      "해방",
+      "주체"
+    ],
+    "exampleQueries": [
+      "비판 이론 쉽게 이해하기",
+      "현대 사회는 무엇이 문제인가요?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 119
+  },
+  {
+    "themeId": "introduction_to_pragmatism",
+    "name": "실용적 관점으로 진리와 삶의 의미를 찾는 실용주의 철학",
+    "shortLabel": "실용주의",
+    "group": "입문·출발형",
+    "type": "철학 주제 탐구형",
+    "description": "삶의 실제적 결과와 유용성을 중시하는 퍼스, 제임스, 듀이의 실용주의 사상을 통해 지식과 가치의 의미를 새롭게 해석하는 방법을 배웁니다.",
+    "relatedConcepts": [
+      "진리",
+      "실용성",
+      "경험",
+      "도구주의",
+      "성장"
+    ],
+    "exampleQueries": [
+      "실용주의 철학 쉽게 이해하기",
+      "어떤 생각이 현실에서 유용할까?"
+    ],
+    "isActive": true,
+    "tier": "extended",
+    "priorityOrder": 120
+  }
+]

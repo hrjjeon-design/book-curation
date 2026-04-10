@@ -7,6 +7,7 @@ import { RecommendationResult } from "@/components/recommendation-result"
 import { ThemeCandidatePanel } from "@/components/theme-candidate-panel"
 import { Skeleton } from "@/components/ui/skeleton"
 import { auth } from "@/lib/firebase/client"
+import { RefreshCw } from "lucide-react"
 
 interface Theme {
   themeId: string
@@ -22,8 +23,12 @@ interface Recommendation {
 export default function Home() {
   const [themes, setThemes] = useState<Theme[]>([])
   const [loading, setLoading] = useState(true)
+  const [refreshing, setRefreshing] = useState(false)
   const [recommendation, setRecommendation] = useState<Recommendation | null>(null)
   const [recommending, setRecommending] = useState(false)
+  const [loadingMore, setLoadingMore] = useState(false)
+  const [seenBookIsbns, setSeenBookIsbns] = useState<string[]>([])
+  const [currentThemeId, setCurrentThemeId] = useState<string | null>(null)
 
   // States for Stage 5
   const [freeQueryResult, setFreeQueryResult] = useState<{
@@ -33,17 +38,27 @@ export default function Home() {
   const [querying, setQuerying] = useState(false)
   const [sessionId] = useState(() => `sess_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`)
 
+  const fetchThemes = async (isRefresh = false) => {
+    if (isRefresh) {
+      setRefreshing(true)
+    } else {
+      setLoading(true)
+    }
+    
+    try {
+      const res = await fetch("/api/themes")
+      const data = await res.json()
+      setThemes(data)
+    } catch (err) {
+      console.error("Failed to fetch themes", err)
+    } finally {
+      setLoading(false)
+      setRefreshing(false)
+    }
+  }
+
   useEffect(() => {
-    fetch("/api/themes")
-      .then((res) => res.json())
-      .then((data) => {
-        setThemes(data)
-        setLoading(false)
-      })
-      .catch((err) => {
-        console.error("Failed to fetch themes", err)
-        setLoading(false)
-      })
+    fetchThemes()
   }, [])
 
   const getDeviceType = (): string => {
@@ -95,6 +110,8 @@ export default function Home() {
   const handleTopicClick = async (themeId: string) => {
     setRecommending(true)
     setRecommendation({ introMessage: "", books: [] })
+    setSeenBookIsbns([])
+    setCurrentThemeId(themeId)
     window.scrollTo(0, 0)
 
     const entryType = freeQueryResult ? "free_input" : "theme_selection"
@@ -217,6 +234,9 @@ export default function Home() {
         })
         const finalData = { introMessage: parsed.introMessage || "", books: finalBooks }
         setRecommendation(finalData)
+        // Track seen books for "show more" feature
+        const newIsbns = finalBooks.map((b: any) => b.bookId).filter(Boolean)
+        setSeenBookIsbns(prev => [...prev, ...newIsbns])
 
         // interaction_logs: recommendation_rendered (fire-and-forget)
         fetch("/api/logs", {
@@ -265,13 +285,91 @@ export default function Home() {
     }
   }
 
+  const handleShowMore = async () => {
+    if (!currentThemeId || loadingMore) return
+    setLoadingMore(true)
+
+    try {
+      const excludeParam = seenBookIsbns.length > 0 ? `&excludeIsbns=${seenBookIsbns.join(",")}` : ""
+      const res = await fetch(`/api/recommend?themeId=${currentThemeId}${excludeParam}`)
+      if (!res.ok || !res.body) throw new Error("Stream failed")
+
+      const reader = res.body.getReader()
+      const decoder = new TextDecoder()
+      let accumulated = ""
+      let bookMeta: any[] = []
+      let metaParsed = false
+
+      const robustParse = (json: string) => {
+        const cleaned = json.replace(/,(\s*[\]}])/g, "$1")
+        return JSON.parse(cleaned)
+      }
+
+      while (true) {
+        const { done, value } = await reader.read()
+        if (done) break
+        accumulated += decoder.decode(value, { stream: true })
+
+        if (!metaParsed && accumulated.includes("\n")) {
+          const newlineIdx = accumulated.indexOf("\n")
+          const metaLine = accumulated.slice(0, newlineIdx)
+          try {
+            const parsed = robustParse(metaLine)
+            if (parsed.__meta__) {
+              bookMeta = parsed.__meta__
+              accumulated = accumulated.slice(newlineIdx + 1)
+              metaParsed = true
+            }
+          } catch { }
+        }
+      }
+
+      // Parse the final result
+      const cleanedJson = accumulated.replace(/```json|```/g, "").trim()
+      let jsonToParse = cleanedJson
+      const startIdx = cleanedJson.indexOf("{")
+      const endIdx = cleanedJson.lastIndexOf("}")
+      if (startIdx !== -1 && endIdx !== -1) {
+        jsonToParse = cleanedJson.substring(startIdx, endIdx + 1)
+      }
+
+      const parsed = robustParse(jsonToParse)
+      const newBooks = (Array.isArray(parsed.books) ? parsed.books : []).map((rec: any) => {
+        const original = bookMeta.find((b: any) => b.title === rec.title)
+        return {
+          ...rec,
+          bookId: original?.bookId || null,
+          author: original?.author || rec.author || "Unknown",
+          publisher: original?.publisher || null,
+          pubYear: original?.pubYear || null,
+          coverImage: original?.coverImage || null,
+        }
+      })
+
+      if (newBooks.length > 0) {
+        const newIsbns = newBooks.map((b: any) => b.bookId).filter(Boolean)
+        setSeenBookIsbns(prev => [...prev, ...newIsbns])
+        setRecommendation(prev => prev ? {
+          ...prev,
+          books: [...prev.books, ...newBooks],
+        } : null)
+      }
+    } catch (err) {
+      console.error("Failed to load more recommendations", err)
+    } finally {
+      setLoadingMore(false)
+    }
+  }
+
   if (recommendation) {
     return (
       <RecommendationResult
         introMessage={recommendation.introMessage}
         books={recommendation.books}
         streaming={recommending}
-        onBack={() => { setRecommendation(null); setRecommending(false) }}
+        loadingMore={loadingMore}
+        onBack={() => { setRecommendation(null); setRecommending(false); setSeenBookIsbns([]); setCurrentThemeId(null) }}
+        onShowMore={handleShowMore}
       />
     )
   }
@@ -300,11 +398,21 @@ export default function Home() {
 
         {loading || recommending || querying ? (
           <div className="space-y-8">
-            <Skeleton className="h-4 w-[100px]" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {[1, 2, 3, 4].map((i) => (
-                <Skeleton key={i} className="h-12 w-full" />
-              ))}
+            <div className="space-y-3">
+              <Skeleton className="h-5 w-24" />
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {[1, 2, 3, 4].map((i) => (
+                  <Skeleton key={i} className="h-12 w-full rounded-xl" />
+                ))}
+              </div>
+            </div>
+            <div className="space-y-3">
+              <Skeleton className="h-5 w-32" />
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {[1, 2, 3, 4].map((i) => (
+                  <Skeleton key={i} className="h-12 w-full rounded-xl" />
+                ))}
+              </div>
             </div>
           </div>
         ) : freeQueryResult ? (
@@ -315,7 +423,7 @@ export default function Home() {
             onBack={() => setFreeQueryResult(null)}
           />
         ) : (
-          <div className="space-y-10 sm:space-y-12">
+          <div className={`space-y-10 sm:space-y-12 transition-opacity duration-300 ${refreshing ? 'opacity-50 pointer-events-none' : 'opacity-100'}`}>
             {Object.entries(groupedThemes).map(([groupTitle, groupTopics]) => (
               <TopicGroup
                 key={groupTitle}
@@ -324,6 +432,17 @@ export default function Home() {
                 onTopicClick={handleTopicClick}
               />
             ))}
+
+            <div className="flex justify-center mt-6">
+              <button
+                onClick={() => fetchThemes(true)}
+                disabled={refreshing}
+                className="flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-card text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-all shadow-sm hover:shadow-md active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed group"
+              >
+                <RefreshCw className={`w-4 h-4 transition-transform ${refreshing ? 'animate-spin' : 'group-hover:rotate-180 duration-500'}`} />
+                다른 주제 보기
+              </button>
+            </div>
           </div>
         )}
       </div>

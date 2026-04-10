@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "seed": "tsx scripts/seed.ts"
+    "seed": "tsx scripts/seed.ts",
+    "seed-themes-expanded": "tsx scripts/seed-themes-expanded.ts",
+    "migrate-themes-tier": "tsx scripts/migrate-themes-tier.ts",
+    "build-cache": "tsx scripts/build-theme-cache.ts"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
