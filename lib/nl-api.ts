@@ -153,6 +153,8 @@ async function fetchDescription(url: string | null): Promise<string | null> {
   }
 }
 
+import { fetchCoverByISBN } from "./cover-image"
+
 async function parseNLResult(doc: any): Promise<VerifiedBook> {
   let descriptionUrl = doc.BOOK_INTRODUCTION_URL
   if (descriptionUrl && descriptionUrl.startsWith("http://")) {
@@ -160,19 +162,20 @@ async function parseNLResult(doc: any): Promise<VerifiedBook> {
   }
   const description = await fetchDescription(descriptionUrl)
 
-  let coverImage = doc.TITLE_URL || null
-  if (coverImage && coverImage.startsWith("http://")) {
-    coverImage = coverImage.replace("http://", "https://")
-  }
+  const isbn = doc.EA_ISBN || doc.SET_ISBN || ""
+  const nlTitleUrl = doc.TITLE_URL || null
+
+  // ISBN 기반으로 표지 조회 (알라딘 우선, NL 폴백)
+  const coverImage = await fetchCoverByISBN(isbn, nlTitleUrl)
 
   return {
     title: doc.TITLE,
     author: doc.AUTHOR,
     publisher: doc.PUBLISHER,
     pubYear: parseInt(doc.PUBLISH_PREDATE?.substring(0, 4) || "0"),
-    isbn: doc.EA_ISBN || doc.SET_ISBN || "",
-    coverImage: coverImage,
-    description: description,
+    isbn,
+    coverImage,
+    description,
   }
 }
 

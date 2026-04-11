@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, Suspense } from "react"
 import { SearchInput } from "@/components/search-input"
 import { TopicGroup } from "@/components/topic-group"
 import { RecommendationResult } from "@/components/recommendation-result"
@@ -8,6 +8,7 @@ import { ThemeCandidatePanel } from "@/components/theme-candidate-panel"
 import { Skeleton } from "@/components/ui/skeleton"
 import { auth } from "@/lib/firebase/client"
 import { RefreshCw } from "lucide-react"
+import { useSearchParams } from "next/navigation"
 
 interface Theme {
   themeId: string
@@ -20,7 +21,7 @@ interface Recommendation {
   books: any[]
 }
 
-export default function Home() {
+function HomeContent() {
   const [themes, setThemes] = useState<Theme[]>([])
   const [loading, setLoading] = useState(true)
   const [refreshing, setRefreshing] = useState(false)
@@ -37,6 +38,8 @@ export default function Home() {
   } | null>(null)
   const [querying, setQuerying] = useState(false)
   const [sessionId] = useState(() => `sess_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`)
+
+  const searchParams = useSearchParams()
 
   const fetchThemes = async (isRefresh = false) => {
     if (isRefresh) {
@@ -60,6 +63,16 @@ export default function Home() {
   useEffect(() => {
     fetchThemes()
   }, [])
+
+  // Handle re-recommendation via URL parameter
+  useEffect(() => {
+    const themeId = searchParams.get("themeId")
+    if (themeId && !recommending && !recommendation) {
+      handleTopicClick(themeId)
+      // Clear the themeId from URL to prevent infinite loop on "back"
+      window.history.replaceState(null, "", "/")
+    }
+  }, [searchParams])
 
   const getDeviceType = (): string => {
     if (typeof window === "undefined") return "desktop"
@@ -393,7 +406,7 @@ export default function Home() {
         </header>
 
         <div className="mb-12 sm:mb-16">
-          <SearchInput onSearch={handleSearch} />
+          <SearchInput onSearch={handleSearch} loading={querying} />
         </div>
 
         {loading || recommending || querying ? (
@@ -447,5 +460,32 @@ export default function Home() {
         )}
       </div>
     </main>
+  )
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={
+      <main className="min-h-screen bg-background">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+          <header className="text-center mb-10 sm:mb-12">
+            <h1 className="text-2xl sm:text-3xl font-semibold text-foreground tracking-tight text-balance">
+              철학 도서 큐레이션
+            </h1>
+            <p className="mt-3 text-muted-foreground text-base sm:text-lg">
+              삶의 질문에 맞는 철학 도서를 찾아드립니다
+            </p>
+          </header>
+          <div className="space-y-8 mt-12">
+            <Skeleton className="h-5 w-24" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {[1, 2, 3, 4].map((i) => <Skeleton key={i} className="h-12 w-full rounded-xl" />)}
+            </div>
+          </div>
+        </div>
+      </main>
+    }>
+      <HomeContent />
+    </Suspense>
   )
 }

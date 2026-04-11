@@ -50,8 +50,13 @@ export function ThemeCandidatePanel({
             </button>
           ))
         ) : (
-          <div className="p-8 text-center bg-muted/20 border border-dashed border-border rounded-lg">
-            <p className="text-muted-foreground">관련 주제를 찾지 못했습니다. 다른 질문을 입력해 보세요.</p>
+          <div className="p-8 text-center bg-muted/20 border border-dashed border-border rounded-lg space-y-3">
+            <p className="text-muted-foreground">
+              &quot;{inputQuery}&quot;와 관련된 주제를 찾지 못했습니다.
+            </p>
+            <p className="text-sm text-muted-foreground/70">
+              다른 표현으로 검색해 보세요. 예: &quot;삶의 의미&quot;, &quot;불안&quot;, &quot;정의란 무엇인가&quot;
+            </p>
           </div>
         )}
       </div>
